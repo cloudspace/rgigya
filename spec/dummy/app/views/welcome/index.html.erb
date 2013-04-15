@@ -1,0 +1,10 @@
+<% if(@user_info) %>
+  <h2>Thanks for signing up!</h2>
+  <label>First Name</label><div class='field_value'></div>
+  <label>Last Name</label><div class='field_value'></div>
+<% else %>    
+  <div id="loginDiv"></div>
+  <script type="text/javascript">
+      gigya.socialize.showLoginUI(params);
+  </script>
+<% end %>
