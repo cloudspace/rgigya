@@ -1,7 +1,11 @@
 <% if(@user_info) %>
   <h2>Thanks for signing up!</h2>
-  <label>First Name</label><div class='field_value'></div>
-  <label>Last Name</label><div class='field_value'></div>
+  <div class='field_row'>
+    <label>First Name: </label><div class='field_value'><%= @user_info['firstName'] %></div>
+  </div>
+  <div class='field_row'>
+    <label>Last Name: </label><div class='field_value'><%= @user_info['lastName'] %></div>
+  </div>
 <% else %>    
   <div id="loginDiv"></div>
   <script type="text/javascript">

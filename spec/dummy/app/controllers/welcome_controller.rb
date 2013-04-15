@@ -1,4 +1,8 @@
-require 'Gigya'
+# 
+# 
+# Check out the development evironment file on where to set the Gigya api key and secret.
+# 
+#
 
 class WelcomeController < ApplicationController  
   
@@ -8,8 +12,8 @@ class WelcomeController < ApplicationController
   # GET /welcome.json                                       HTML and AJAX
   #-----------------------------------------------------------------------
   def index
-    if(params)
-      @user_info = Gigya.socialize_getUserInfo({
+    if(params.has_key?('UID'))
+      @user_info = RGigya.socialize_getUserInfo({
         'UID' => params['UID']
       });
     end

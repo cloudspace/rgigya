@@ -22,8 +22,8 @@ require 'CGI'
 # These should be commented out and set in your environments for the project.
 # Uncomment below for testing without rails
 #
-GIGYA_API_KEY = "12345"
-GIGYA_API_SECRET = "12345"
+# GIGYA_API_KEY = "12345"
+# GIGYA_API_SECRET = "12345"
 
 
 class RGigya
@@ -65,18 +65,20 @@ class RGigya
     # @author Scott Sampson
     def build_url(method, options = {})
       # options = {} if options.blank?
-      if options.has_key?(:uid) && options[:uid].nil?
+      if options && options.has_key?(:uid) && options[:uid].nil?
         raise RGigya::UIDParamIsNil, ""
       end
       
-      if options.has_key?(:siteUID) && options[:siteUID].nil?
+      if options && options.has_key?(:siteUID) && options[:siteUID].nil?
         raise RGigya::SiteUIDParamIsNil, ""
       end
 
       method_type,method_name = method.split(".")
       url = "#{@@urls[method_type.to_sym]}/#{method}?#{required_parameters}"
-      options.each do |key,value|
-        url += "&#{key}=#{CGI.escape(value.to_s)}"
+      if(options)
+        options.each do |key,value|
+          url += "&#{key}=#{CGI.escape(value.to_s)}"
+        end
       end
       url
     end

@@ -35,3 +35,8 @@ Dummy::Application.configure do
   # Expands the lines which load the assets
   config.assets.debug = true
 end
+
+
+# The Gigya api key and secret need to be set here
+GIGYA_API_KEY = ""
+GIGYA_API_SECRET = ""
