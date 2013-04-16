@@ -1,7 +1,5 @@
 = RGigya
 
-== Description
-
 RGigya is an sdk wrapper around the Gigya Rest Api.  
 
 == Install
@@ -74,6 +72,6 @@ Then add your api calls in your controllers, models, libraries, etc.
 
 == Copyright
 
-Copyright (c) 2013 Scott. See LICENSE.txt for
+Copyright (c) 2013 Cloudspace. See LICENSE.txt for
 further details.
 
