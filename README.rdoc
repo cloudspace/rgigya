@@ -94,13 +94,13 @@ We have included a rails dummy site to give you an idea of how to integrate the 
 === Configuration
 
 * Edit app/views/layouts/application.html.erb
-** replace <add api key here> with your api key.  You do NOT need a secret on this page.
-** replace the callback to be appropriate to your dev site.
-*** In my case I added dev.rgigya.com to my hosts file and pointed it to localhost (127.0.0.1)
-*** I then made the callback http://dev.rgigya.com/welcome.html in application.html.erb
+  * replace <add api key here> with your api key.  You do NOT need a secret on this page.
+  * replace the callback to be appropriate to your dev site.
+    * In my case I added dev.rgigya.com to my hosts file and pointed it to localhost (127.0.0.1)
+    * I then made the callback http://dev.rgigya.com/welcome.html in application.html.erb
 * Edit config/environments/development.rb and add the following constants
-** GIGYA_API_KEY = "<add api key here>"
-** GIGYA_API_SECRET = "<add api secret here>"
+  * GIGYA_API_KEY = "<add api key here>"
+  * GIGYA_API_SECRET = "<add api secret here>"
 
 === Running the rails app
 
