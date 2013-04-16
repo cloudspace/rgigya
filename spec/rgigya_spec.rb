@@ -1,15 +1,7 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
-# these need to be filled out for tests to work
-GIGYA_API_KEY = "3_R8EXCCYB4F_2ROtTKRd1es1ymkHtjHnoFsDrLjAnxMdMnp94Xwfjquh-TmYq3X7J"
-GIGYA_API_SECRET = "pQURJZXvJ/L9cg2J2XHULlBLzGjzPWtjNRz89GSZOCY="
-
 describe RGigya do
-  before :each do
-    
-    
-  end
-
+  
   it "should use the socialize url when making a socialize api call" do
     RGigya.stub(:required_parameters) {
       ''
@@ -40,6 +32,18 @@ describe RGigya do
     url.should match(/https:\/\/comments.gigya.com/)
   end
   
+  it "should raise a bad param error if UID is nil" do
+    expect {
+      RGigya.build_url('socialize.getUserInfo', {:uid => nil})
+    }.to raise_error(RGigya::UIDParamIsNil)
+  end
+  
+  it "should raise a bad param error if siteUID is nil" do
+    expect {
+      RGigya.build_url('socialize.getUserInfo', {:siteUID => nil})
+    }.to raise_error(RGigya::SiteUIDParamIsNil)
+  end
+  
   it "should fill in the required parameters on request" do
     # we pass in the "_" replaced with "." already
     params = RGigya.required_parameters
@@ -64,7 +68,19 @@ describe RGigya do
       RGigya.check_for_errors({
         'errorCode' => 400002
       })
-    }.to raise_error
+    }.to raise_error(RGigya::BadParamsOrMethodName)
+  end
+  
+  it "should raise an error when an errorcode other than 0,400002, or 400124 is returned" do
+    # Buffering the log
+    buffer = StringIO.new
+    $stdout = buffer
+    expect {
+      RGigya.check_for_errors({
+        'errorCode' => 4034934
+      })
+    }.to raise_error(RGigya::ErrorCodeReturned)
+    $stdout = STDOUT
   end
   
   it "should report method missing if method does not start with socialize" do
@@ -155,19 +171,18 @@ describe RGigya do
     $stdout = STDOUT
     buffer.rewind
     buffer.read.should == "mocked_data=" + str + "\n"
+    # Remove the rails object so it doesn't interfere with tests below
+    Object.send(:remove_const, :Rails)
   end
-  
+    
   it "should return a result of false if we pass a bad method" do
-    HTTParty = mock("HTTParty")
     HTTParty.stub(:get) do |url,options|
       nil
     end
     RGigya.parse_results("socialize_notAMethod",{}).should be_false
-    
   end
-  
+    
   it "should raise json error if gigya returns bad json" do
-    HTTParty = mock("HTTParty")
     HTTParty.stub(:get) do |url,options|
       Response = mock("Response")
       Response.stub(:body) {
@@ -179,24 +194,64 @@ describe RGigya do
     expect {
       RGigya.parse_results("socialize_notAMethod",{}).should be_false
     }.to raise_error(RGigya::JSONParseError)
-    
   end
-  
-  
-  it "should raise json error if gigya returns bad json" do
-    HTTParty = mock("HTTParty")
+    
+     
+  it "should raise a response error if the gigya call fails" do
     HTTParty.stub(:get) do |url,options|
-      Response = mock("Response")
-      Response.stub(:body) {
-        '{'
-      }
-      Response
+      raise SocketError
     end
     
     expect {
       RGigya.parse_results("socialize_notAMethod",{}).should be_false
-    }.to raise_error(RGigya::JSONParseError)
+    }.to raise_error(RGigya::ResponseError)    
+  end
+  
+  it "should raise a response error if the gigya call times out" do
+    HTTParty.stub(:get) do |url,options|
+      raise Timeout::Error
+    end
+    
+    expect {
+      RGigya.parse_results("socialize_notAMethod",{}).should be_false
+    }.to raise_error(RGigya::ResponseError)
     
   end
+  
+  
+  # Actual tests that modify the gigya account below
+  
+  it "should login a user" do
+    
+    userInfo = {
+      'nickname' => 'Gigems', 
+      'email' => 'ralph@cloudspace.com',
+      'firstName' => 'Ralph', 
+      'lastName' => 'Masterson'
+    }
+    
+    response = RGigya.socialize_notifyLogin({
+      :siteUID => '1',
+      :userInfo => userInfo.to_json
+    })
+  end
+  
+  it "should register a user" do
+    uid = get_uid
+    RGigya.socialize_notifyRegistration({
+      :UID => uid,
+      :siteUID => '1',
+    })
+    
+  end
+  
+  it "should get the users info" do
+    uid = get_uid
+    response = RGigya.socialize_getUserInfo({
+      :UID => uid,
+    })
+    response['nickname'].should match 'Gigems'
+  end
+  
   
 end
