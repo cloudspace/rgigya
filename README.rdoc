@@ -10,6 +10,15 @@ RGigya is an sdk wrapper around the Gigya Rest Api.
 
 Please read the documentation at gigya for best practices.  http://developers.gigya.com/037_API_reference.  You may need to create a developers account to access the documentation.
 
+=== Get your api key and secret.
+
+You will need to setup your own dev site on the gigya platform for testing.  
+
+* Go to https://platform.gigya.com/login.aspx to login.
+* Once you have logged into the platform. Click "add site"
+* Enter a domain and description and click add site
+* Remember the api key and secret for later
+
 === Without Rails
 
   require 'RGigya'
@@ -20,7 +29,7 @@ Please read the documentation at gigya for best practices.  http://developers.gi
   RGigya.socialize_notifyLogin({:siteUID => '1'})
 
 
-===With Rails
+=== With Rails
 
 Edit your config/environments/development.rb file and add the following constants
 
@@ -59,6 +68,45 @@ Then add your api calls in your controllers, models, libraries, etc.
   }
 
   RGigya.comments_flagComment(gigya_params)
+  
+== Rspec Tests
+
+We have included rspec unit tests.
+
+=== Configuration
+
+Edit spec/spec_helper.rb
+
+  Replace <add api key here> with your api key
+  Replace <add api secret here> with your api secret
+
+
+=== Running tests
+
+  cd <root of the project>
+  rspec rgigya_spec.rb
+  
+  
+== Rails dummy site
+
+We have included a rails dummy site to give you an idea of how to integrate the gem within rails.  It just peforms a simple login.
+
+=== Configuration
+
+* Edit app/views/layouts/application.html.erb
+** replace <add api key here> with your api key.  You do NOT need a secret on this page.
+** replace the callback to be appropriate to your dev site.
+*** In my case I added dev.rgigya.com to my hosts file and pointed it to localhost (127.0.0.1)
+*** I then made the callback http://dev.rgigya.com/welcome.html in application.html.erb
+* Edit config/environments/development.rb and add the following constants
+** GIGYA_API_KEY = "<add api key here>"
+** GIGYA_API_SECRET = "<add api secret here>"
+
+=== Running the rails app
+
+  cd test/dummy
+  bundle
+  sudo rails s -p80
 
 == Contributing to RGigya
  
