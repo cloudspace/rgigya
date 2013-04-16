@@ -26,53 +26,41 @@ Please read the documentation at gigya for best practices.  http://developers.gi
 
 Edit your config/environments/development.rb file and add the following constants
 
-```ruby
-GIGYA_API_KEY = "<add api key here>"
-GIGYA_API_SECRET = "<add api secret here>"
-```
+
+  GIGYA_API_KEY = "<add api key here>"
+  GIGYA_API_SECRET = "<add api secret here>"
 
 Then add your api calls in your controllers, models, libraries, etc.
 
-```ruby
-RGigya.socialize_notifyLogin({:siteUID => '1'})
-```
+  RGigya.socialize_notifyLogin({:siteUID => '1'})
+
 
 == Examples
 
-= socialize.notifyLogin
+=== socialize.notifyLogin
 
-```ruby
+  userInfo = {
+    'nickname' => 'Gigems', 
+    'email' => 'ralph@cloudspace.com',
+    'firstName' => 'Ralph', 
+    'lastName' => 'Masterson'
+  }
 
-userInfo = {
-  'nickname' => 'Gigems', 
-  'email' => 'ralph@cloudspace.com',
-  'firstName' => 'Ralph', 
-  'lastName' => 'Masterson'
-}
+  RGigya.socialize_notifyLogin({:siteUID => '1', :userInfo => userInfo.to_json} )
 
-RGigya.socialize_notifyLogin({:siteUID => '1', :userInfo => userInfo.to_json} )
-```
+=== gm.notifyAction
 
+  RGigya.gm_notifyAction(:uid => '1',:action => 'comment_upvote')
 
-= gm.notifyAction
+=== comments.flagComment
 
-```ruby
-RGigya.gm_notifyAction(:uid => '1',:action => 'comment_upvote')
-```
+  gigya_params = {
+    :commentID => params[:commentID],
+    :categoryID => params[:categoryID],
+    :streamID => params[:streamID]
+  }
 
-= comments.flagComment
-
-```ruby
-
-gigya_params = {
-  :commentID => params[:commentID],
-  :categoryID => params[:categoryID],
-  :streamID => params[:streamID]
-}
-
-RGigya.comments_flagComment(gigya_params)
-```
-
+  RGigya.comments_flagComment(gigya_params)
 
 == Contributing to RGigya
  
