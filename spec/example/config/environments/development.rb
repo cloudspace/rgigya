@@ -38,5 +38,5 @@ end
 
 
 # The Gigya api key and secret need to be set here
-GIGYA_API_KEY = ""
-GIGYA_API_SECRET = ""
+GIGYA_API_KEY = "3_R8EXCCYB4F_2ROtTKRd1es1ymkHtjHnoFsDrLjAnxMdMnp94Xwfjquh-TmYq3X7J"
+GIGYA_API_SECRET = "pQURJZXvJ/L9cg2J2XHULlBLzGjzPWtjNRz89GSZOCY="

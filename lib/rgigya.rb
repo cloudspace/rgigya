@@ -19,7 +19,7 @@ require 'CGI'
 
 #
 # Constants to be used for the gigya key and secret.  
-# These should be commented out and set in your environments for the project.
+# These should be commented out and set in your environments for your rails project.
 # Uncomment below for testing without rails
 #
 # GIGYA_API_KEY = "12345"
@@ -64,7 +64,6 @@ class RGigya
     #
     # @author Scott Sampson
     def build_url(method, options = {})
-      # options = {} if options.blank?
       if options && options.has_key?(:uid) && options[:uid].nil?
         raise RGigya::UIDParamIsNil, ""
       end
@@ -96,8 +95,6 @@ class RGigya
       # options = {} if options.is_a?(String) && options.blank?
       begin
         response = HTTParty.get(build_url(method, options),{:timeout => 10})
-      # rescue RGigya::ResponseError, RGigya::SiteUIDParamIsNil, RGigya::UIDParamIsNil => e 
-      # rescue RGigya::ResponseError => e 
       rescue SocketError,Timeout::Error => e 
         raise RGigya::ResponseError, e.message
       end
@@ -130,7 +127,7 @@ class RGigya
         when '400124'
           #Limit Reached error - don't fail so bad
         when '400002'
-          raise RGigya::BadParamsOrMethodNames
+          raise RGigya::BadParamsOrMethodName, results['errorDetails']
         else 
           log("RGigya returned Error code #{results['errorCode']}.\n\nError Message: #{results['errorMessage']}\n\nError Details: #{results['errorDetails']}")
           raise RGigya::ErrorCodeReturned, "returned Error code #{results['errorCode']}: #{results['errorMessage']}"
@@ -145,14 +142,38 @@ class RGigya
     #
     # @author Scott Sampson
     def method_missing(sym, *args)
+      
       method = sym.to_s.gsub("_",".")
-      results = parse_results(method, args.first)
+      method_type,method_name = method.split(".")
+      if(@@urls.has_key?(method_type.to_sym)) 
+        results = parse_results(method, args.first)
+      else 
+        results = false
+      end
+      
       if results
         return check_for_errors(results)
       else 
         super
       end
     end
+    
+    
+    ##
+    # Override respond_to? We can't really give an accurate return here
+    # I am only allowing those methods that start with socialize, gm and comments
+    #
+    # @param [Symbol] sym The method symbol
+    # @param [Boolean] include_private Whether you want to include private or not. 
+    #
+    # @author Scott Sampson
+    def respond_to?(sym, include_private = false)
+      method = sym.to_s.gsub("_",".")
+      method_type,method_name = method.split(".")
+      return @@urls.has_key?(method_type.to_sym)
+    end
+    
+    
         
     ##
     # Custom log method, if we are in rails we should log any errors for debugging purposes
@@ -163,6 +184,8 @@ class RGigya
     def log(log_str)
       if Object.const_defined?('Rails')
         Rails.logger.info(log_str)
+      else
+        puts log_str
       end
     end
   end
