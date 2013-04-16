@@ -6,26 +6,23 @@ RGigya is an sdk wrapper around the Gigya Rest Api.
 
 == Install
 
-```bash
-$ gem install rgigya
-```
+  gem install rgigya
 
 == Getting started
 
 Please read the documentation at gigya for best practices.  http://developers.gigya.com/037_API_reference.  You may need to create a developers account to access the documentation.
 
-= Without Rails
+=== Without Rails
 
-```ruby
-require 'RGigya'
+  require 'RGigya'
 
-GIGYA_API_KEY = "<add api key here>"
-GIGYA_API_SECRET = "<add api secret here>"
+  GIGYA_API_KEY = "<add api key here>"
+  GIGYA_API_SECRET = "<add api secret here>"
 
-RGigya.socialize_notifyLogin({:siteUID => '1'})
-```
+  RGigya.socialize_notifyLogin({:siteUID => '1'})
 
-= With Rails
+
+===With Rails
 
 Edit your config/environments/development.rb file and add the following constants
 
