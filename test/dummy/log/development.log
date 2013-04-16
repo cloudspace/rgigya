@@ -1,0 +1,1130 @@
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-04-15 10:22:20 -0400
+Served asset /rails.png - 200 OK (37ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 10:24:23 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (19.0ms)
+Compiled application.css  (0ms)  (pid 13414)
+Compiled jquery.js  (18ms)  (pid 13414)
+Compiled jquery_ujs.js  (0ms)  (pid 13414)
+Compiled application.js  (145ms)  (pid 13414)
+Completed 200 OK in 973ms (Views: 972.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 10:24:26 -0400
+Served asset /jquery.js - 200 OK (5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 10:24:26 -0400
+Served asset /application.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 10:24:26 -0400
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 10:24:26 -0400
+Served asset /application.js - 200 OK (6ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 10:42:53 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 10:42:53 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 10:42:54 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 10:42:54 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 10:42:54 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 10:43:33 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 10:43:33 -0400
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 10:43:33 -0400
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 10:43:33 -0400
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 10:43:33 -0400
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 10:51:40 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 10:51:40 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 10:51:40 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 10:51:40 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 10:51:40 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 10:51:56 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 3ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 10:51:56 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 10:51:56 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 10:51:56 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 10:51:56 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=m%2BAOpWb%2Bz4XV4Z2YcJAiXo3ovRA%3D&timestamp=2013-04-15%2014%3A51%3A58&UIDSignature=Zvh5vAgkNVe2238tsZSlb0WZ2WY%3D&signatureTimestamp=1366037518&loginProviderUID=100002922034023&isSiteUID=false&signature=m%2BAOpWb%2Bz4XV4Z2YcJAiXo3ovRA%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-15 10:51:58 -0400
+
+ActionController::RoutingError (No route matches [GET] "/welcome.html"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/scottsampson/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/scottsampson/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/scottsampson/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@giggity/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=m%2BAOpWb%2Bz4XV4Z2YcJAiXo3ovRA%3D&timestamp=2013-04-15%2014%3A51%3A58&UIDSignature=Zvh5vAgkNVe2238tsZSlb0WZ2WY%3D&signatureTimestamp=1366037518&loginProviderUID=100002922034023&isSiteUID=false&signature=m%2BAOpWb%2Bz4XV4Z2YcJAiXo3ovRA%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-15 10:52:54 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"m+AOpWb+z4XV4Z2YcJAiXo3ovRA=", "timestamp"=>"2013-04-15 14:51:58", "UIDSignature"=>"Zvh5vAgkNVe2238tsZSlb0WZ2WY=", "signatureTimestamp"=>"1366037518", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"m+AOpWb+z4XV4Z2YcJAiXo3ovRA=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 17ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 10:52:54 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 10:52:54 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 10:52:54 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 10:52:54 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=m%2BAOpWb%2Bz4XV4Z2YcJAiXo3ovRA%3D&timestamp=2013-04-15%2014%3A51%3A58&UIDSignature=Zvh5vAgkNVe2238tsZSlb0WZ2WY%3D&signatureTimestamp=1366037518&loginProviderUID=100002922034023&isSiteUID=false&signature=m%2BAOpWb%2Bz4XV4Z2YcJAiXo3ovRA%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-15 11:14:52 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"m+AOpWb+z4XV4Z2YcJAiXo3ovRA=", "timestamp"=>"2013-04-15 14:51:58", "UIDSignature"=>"Zvh5vAgkNVe2238tsZSlb0WZ2WY=", "signatureTimestamp"=>"1366037518", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"m+AOpWb+z4XV4Z2YcJAiXo3ovRA=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant WelcomeController::Gigya):
+  app/controllers/welcome_controller.rb:10:in `index'
+
+
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@giggity/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@giggity/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@giggity/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.6ms)
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=m%2BAOpWb%2Bz4XV4Z2YcJAiXo3ovRA%3D&timestamp=2013-04-15%2014%3A51%3A58&UIDSignature=Zvh5vAgkNVe2238tsZSlb0WZ2WY%3D&signatureTimestamp=1366037518&loginProviderUID=100002922034023&isSiteUID=false&signature=m%2BAOpWb%2Bz4XV4Z2YcJAiXo3ovRA%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-15 11:15:06 -0400
+
+LoadError (cannot load such file -- Gigya):
+  app/controllers/welcome_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@giggity/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@giggity/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@giggity/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.5ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=m%2BAOpWb%2Bz4XV4Z2YcJAiXo3ovRA%3D&timestamp=2013-04-15%2014%3A51%3A58&UIDSignature=Zvh5vAgkNVe2238tsZSlb0WZ2WY%3D&signatureTimestamp=1366037518&loginProviderUID=100002922034023&isSiteUID=false&signature=m%2BAOpWb%2Bz4XV4Z2YcJAiXo3ovRA%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-15 11:17:25 -0400
+
+LoadError (cannot load such file -- Gigya):
+  app/controllers/welcome_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@giggity/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@giggity/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@giggity/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.6ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=m%2BAOpWb%2Bz4XV4Z2YcJAiXo3ovRA%3D&timestamp=2013-04-15%2014%3A51%3A58&UIDSignature=Zvh5vAgkNVe2238tsZSlb0WZ2WY%3D&signatureTimestamp=1366037518&loginProviderUID=100002922034023&isSiteUID=false&signature=m%2BAOpWb%2Bz4XV4Z2YcJAiXo3ovRA%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-15 11:18:11 -0400
+
+LoadError (cannot load such file -- Gigya):
+  app/controllers/welcome_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@giggity/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@giggity/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@giggity/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.2ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+RGigya returned Error code 400006.
+
+Error Message: Invalid parameter value
+
+Error Details: Invalid argument: ApiKey
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+RGigya returned Error code 400006.
+
+Error Message: Invalid parameter value
+
+Error Details: Invalid argument: ApiKey
+RGigya returned Error code 400006.
+
+Error Message: Invalid parameter value
+
+Error Details: Invalid argument: ApiKey
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 14:37:12 -0400
+
+LoadError (cannot load such file -- Gigya):
+  app/controllers/welcome_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (20.5ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 14:37:23 -0400
+Processing by WelcomeController#index as HTML
+RGigya returned Error code 400006.
+
+Error Message: Invalid parameter value
+
+Error Details: Invalid argument: ApiKey
+Completed 500 Internal Server Error in 795ms
+
+RGigya::ErrorCodeReturned (returned Error code 400006: Invalid parameter value):
+  app/controllers/welcome_controller.rb:12:in `index'
+
+
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 14:37:53 -0400
+Processing by WelcomeController#index as HTML
+{"controller"=>"welcome", "action"=>"index"}
+RGigya returned Error code 400006.
+
+Error Message: Invalid parameter value
+
+Error Details: Invalid argument: ApiKey
+Completed 500 Internal Server Error in 171ms
+
+RGigya::ErrorCodeReturned (returned Error code 400006: Invalid parameter value):
+  app/controllers/welcome_controller.rb:13:in `index'
+
+
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 14:38:06 -0400
+Processing by WelcomeController#index as HTML
+{"controller"=>"welcome", "action"=>"index"}
+RGigya returned Error code 400006.
+
+Error Message: Invalid parameter value
+
+Error Details: Invalid argument: ApiKey
+Completed 500 Internal Server Error in 1148ms
+
+RGigya::ErrorCodeReturned (returned Error code 400006: Invalid parameter value):
+  app/controllers/welcome_controller.rb:13:in `index'
+
+
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 14:38:19 -0400
+Processing by WelcomeController#index as HTML
+{"controller"=>"welcome", "action"=>"index"}
+RGigya returned Error code 400006.
+
+Error Message: Invalid parameter value
+
+Error Details: Invalid argument: ApiKey
+Completed 500 Internal Server Error in 177ms
+
+RGigya::ErrorCodeReturned (returned Error code 400006: Invalid parameter value):
+  app/controllers/welcome_controller.rb:13:in `index'
+
+
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 14:38:46 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Compiled application.css  (0ms)  (pid 16093)
+Compiled jquery.js  (1ms)  (pid 16093)
+Compiled jquery_ujs.js  (0ms)  (pid 16093)
+Compiled application.js  (308ms)  (pid 16093)
+Completed 200 OK in 1538ms (Views: 1537.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 14:38:47 -0400
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 14:38:47 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 14:38:47 -0400
+Served asset /application.js - 304 Not Modified (38ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 14:38:47 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=VsE3dcp%2F4F31g1ooEi9lQiYKaVY%3D&timestamp=2013-04-15%2018%3A38%3A52&UIDSignature=wDC3q9nKvzTKhpen3V3xpCNv4ts%3D&signatureTimestamp=1366051132&loginProviderUID=100002922034023&isSiteUID=false&signature=VsE3dcp%2F4F31g1ooEi9lQiYKaVY%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-15 14:38:52 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"VsE3dcp/4F31g1ooEi9lQiYKaVY=", "timestamp"=>"2013-04-15 18:38:52", "UIDSignature"=>"wDC3q9nKvzTKhpen3V3xpCNv4ts=", "signatureTimestamp"=>"1366051132", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"VsE3dcp/4F31g1ooEi9lQiYKaVY=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+RGigya returned Error code 400006.
+
+Error Message: Invalid parameter value
+
+Error Details: Invalid argument: ApiKey
+Completed 500 Internal Server Error in 208ms
+
+RGigya::ErrorCodeReturned (returned Error code 400006: Invalid parameter value):
+  app/controllers/welcome_controller.rb:12:in `index'
+
+
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.7ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=VsE3dcp%2F4F31g1ooEi9lQiYKaVY%3D&timestamp=2013-04-15%2018%3A38%3A52&UIDSignature=wDC3q9nKvzTKhpen3V3xpCNv4ts%3D&signatureTimestamp=1366051132&loginProviderUID=100002922034023&isSiteUID=false&signature=VsE3dcp%2F4F31g1ooEi9lQiYKaVY%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-15 14:49:59 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"VsE3dcp/4F31g1ooEi9lQiYKaVY=", "timestamp"=>"2013-04-15 18:38:52", "UIDSignature"=>"wDC3q9nKvzTKhpen3V3xpCNv4ts=", "signatureTimestamp"=>"1366051132", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"VsE3dcp/4F31g1ooEi9lQiYKaVY=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 256ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 14:49:59 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 14:49:59 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 14:49:59 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 14:49:59 -0400
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=VsE3dcp%2F4F31g1ooEi9lQiYKaVY%3D&timestamp=2013-04-15%2018%3A38%3A52&UIDSignature=wDC3q9nKvzTKhpen3V3xpCNv4ts%3D&signatureTimestamp=1366051132&loginProviderUID=100002922034023&isSiteUID=false&signature=VsE3dcp%2F4F31g1ooEi9lQiYKaVY%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-15 14:50:22 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"VsE3dcp/4F31g1ooEi9lQiYKaVY=", "timestamp"=>"2013-04-15 18:38:52", "UIDSignature"=>"wDC3q9nKvzTKhpen3V3xpCNv4ts=", "signatureTimestamp"=>"1366051132", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"VsE3dcp/4F31g1ooEi9lQiYKaVY=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+{"UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"rf/P1p+unVLdyeDxIIrEIXsjZzM=", "timestamp"=>"2013-04-15 18:50:22", "UIDSignature"=>"0WHAj+p5HjC4KRj3bXhcRSinsX0=", "signatureTimestamp"=>"1366051822", "isSiteUser"=>true, "isConnected"=>true, "isLoggedIn"=>true, "isTempUser"=>false, "loginProvider"=>"facebook", "loginProviderUID"=>"100002922034023", "isSiteUID"=>false, "identities"=>[{"provider"=>"facebook", "providerUID"=>"100002922034023", "isLoginIdentity"=>true, "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "firstName"=>"Fred", "lastName"=>"Guy", "gender"=>"m", "age"=>"33", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "email"=>"fbt@fishingmaster.com", "city"=>"Orlando, Florida", "profileURL"=>"http://www.facebook.com/fred.guy.79", "proxiedEmail"=>"", "allowsLogin"=>true, "isExpiredSession"=>false, "missingPermissions"=>"Actions, Status", "lastLoginTime"=>1366051132, "lastUpdated"=>"2013-04-15T18:38:52.818Z", "lastUpdatedTimestamp"=>1366051132818, "oldestDataUpdated"=>"2013-04-15T18:38:52.076Z", "oldestDataUpdatedTimestamp"=>1366051132076}], "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "firstName"=>"Fred", "lastName"=>"Guy", "gender"=>"m", "age"=>"33", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "email"=>"fbt@fishingmaster.com", "city"=>"Orlando, Florida", "profileURL"=>"http://www.facebook.com/fred.guy.79", "proxiedEmail"=>"", "capabilities"=>"Login, Friends, Places", "providers"=>"facebook", "statusCode"=>200, "errorCode"=>0, "statusReason"=>"OK", "callId"=>"5b78c33c38844e56b8a90668bee0fe99", "oldestDataUpdatedTimestamp"=>1366051132076, "oldestDataAge"=>690}
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 211ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 14:50:22 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 14:50:22 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 14:50:22 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 14:50:22 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=VsE3dcp%2F4F31g1ooEi9lQiYKaVY%3D&timestamp=2013-04-15%2018%3A38%3A52&UIDSignature=wDC3q9nKvzTKhpen3V3xpCNv4ts%3D&signatureTimestamp=1366051132&loginProviderUID=100002922034023&isSiteUID=false&signature=VsE3dcp%2F4F31g1ooEi9lQiYKaVY%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-15 14:51:12 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"VsE3dcp/4F31g1ooEi9lQiYKaVY=", "timestamp"=>"2013-04-15 18:38:52", "UIDSignature"=>"wDC3q9nKvzTKhpen3V3xpCNv4ts=", "signatureTimestamp"=>"1366051132", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"VsE3dcp/4F31g1ooEi9lQiYKaVY=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+{"UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"eW0zT29GSyDW33fOabL71RIL3Mk=", "timestamp"=>"2013-04-15 18:51:12", "UIDSignature"=>"/bSpg5hwaxsnFUGRhXpWp3qCEmc=", "signatureTimestamp"=>"1366051872", "isSiteUser"=>true, "isConnected"=>true, "isLoggedIn"=>true, "isTempUser"=>false, "loginProvider"=>"facebook", "loginProviderUID"=>"100002922034023", "isSiteUID"=>false, "identities"=>[{"provider"=>"facebook", "providerUID"=>"100002922034023", "isLoginIdentity"=>true, "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "firstName"=>"Fred", "lastName"=>"Guy", "gender"=>"m", "age"=>"33", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "email"=>"fbt@fishingmaster.com", "city"=>"Orlando, Florida", "profileURL"=>"http://www.facebook.com/fred.guy.79", "proxiedEmail"=>"", "allowsLogin"=>true, "isExpiredSession"=>false, "missingPermissions"=>"Actions, Status", "lastLoginTime"=>1366051132, "lastUpdated"=>"2013-04-15T18:38:52.818Z", "lastUpdatedTimestamp"=>1366051132818, "oldestDataUpdated"=>"2013-04-15T18:38:52.076Z", "oldestDataUpdatedTimestamp"=>1366051132076}], "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "firstName"=>"Fred", "lastName"=>"Guy", "gender"=>"m", "age"=>"33", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "email"=>"fbt@fishingmaster.com", "city"=>"Orlando, Florida", "profileURL"=>"http://www.facebook.com/fred.guy.79", "proxiedEmail"=>"", "capabilities"=>"Login, Friends, Places", "providers"=>"facebook", "statusCode"=>200, "errorCode"=>0, "statusReason"=>"OK", "callId"=>"b5718b79b94a4663a04d6dc02cbe8f78", "oldestDataUpdatedTimestamp"=>1366051132076, "oldestDataAge"=>740}
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 218ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 14:51:12 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 14:51:12 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 14:51:12 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 14:51:12 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=VsE3dcp%2F4F31g1ooEi9lQiYKaVY%3D&timestamp=2013-04-15%2018%3A38%3A52&UIDSignature=wDC3q9nKvzTKhpen3V3xpCNv4ts%3D&signatureTimestamp=1366051132&loginProviderUID=100002922034023&isSiteUID=false&signature=VsE3dcp%2F4F31g1ooEi9lQiYKaVY%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-15 14:51:41 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"VsE3dcp/4F31g1ooEi9lQiYKaVY=", "timestamp"=>"2013-04-15 18:38:52", "UIDSignature"=>"wDC3q9nKvzTKhpen3V3xpCNv4ts=", "signatureTimestamp"=>"1366051132", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"VsE3dcp/4F31g1ooEi9lQiYKaVY=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+{"UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"Cl4DeHCY2ynYDif/JRmfc+mZIcI=", "timestamp"=>"2013-04-15 18:51:42", "UIDSignature"=>"I3mbEp7Rqj5P7VFHfp4VfRfCc3o=", "signatureTimestamp"=>"1366051902", "isSiteUser"=>true, "isConnected"=>true, "isLoggedIn"=>true, "isTempUser"=>false, "loginProvider"=>"facebook", "loginProviderUID"=>"100002922034023", "isSiteUID"=>false, "identities"=>[{"provider"=>"facebook", "providerUID"=>"100002922034023", "isLoginIdentity"=>true, "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "firstName"=>"Fred", "lastName"=>"Guy", "gender"=>"m", "age"=>"33", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "email"=>"fbt@fishingmaster.com", "city"=>"Orlando, Florida", "profileURL"=>"http://www.facebook.com/fred.guy.79", "proxiedEmail"=>"", "allowsLogin"=>true, "isExpiredSession"=>false, "missingPermissions"=>"Actions, Status", "lastLoginTime"=>1366051132, "lastUpdated"=>"2013-04-15T18:38:52.818Z", "lastUpdatedTimestamp"=>1366051132818, "oldestDataUpdated"=>"2013-04-15T18:38:52.076Z", "oldestDataUpdatedTimestamp"=>1366051132076}], "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "firstName"=>"Fred", "lastName"=>"Guy", "gender"=>"m", "age"=>"33", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "email"=>"fbt@fishingmaster.com", "city"=>"Orlando, Florida", "profileURL"=>"http://www.facebook.com/fred.guy.79", "proxiedEmail"=>"", "capabilities"=>"Login, Friends, Places", "providers"=>"facebook", "statusCode"=>200, "errorCode"=>0, "statusReason"=>"OK", "callId"=>"043f92d2102b44ada090cd87ad10fff8", "oldestDataUpdatedTimestamp"=>1366051132076, "oldestDataAge"=>770}
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 568ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 14:51:42 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 14:51:42 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 14:51:42 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 14:51:42 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=VsE3dcp%2F4F31g1ooEi9lQiYKaVY%3D&timestamp=2013-04-15%2018%3A38%3A52&UIDSignature=wDC3q9nKvzTKhpen3V3xpCNv4ts%3D&signatureTimestamp=1366051132&loginProviderUID=100002922034023&isSiteUID=false&signature=VsE3dcp%2F4F31g1ooEi9lQiYKaVY%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-15 14:51:50 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"VsE3dcp/4F31g1ooEi9lQiYKaVY=", "timestamp"=>"2013-04-15 18:38:52", "UIDSignature"=>"wDC3q9nKvzTKhpen3V3xpCNv4ts=", "signatureTimestamp"=>"1366051132", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"VsE3dcp/4F31g1ooEi9lQiYKaVY=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+{"UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"9+xd1yMtMUPAk47IhEpJy/foGOs=", "timestamp"=>"2013-04-15 18:51:50", "UIDSignature"=>"PniqKdQ3SD5sxZl/ybpFpwRnmKA=", "signatureTimestamp"=>"1366051910", "isSiteUser"=>true, "isConnected"=>true, "isLoggedIn"=>true, "isTempUser"=>false, "loginProvider"=>"facebook", "loginProviderUID"=>"100002922034023", "isSiteUID"=>false, "identities"=>[{"provider"=>"facebook", "providerUID"=>"100002922034023", "isLoginIdentity"=>true, "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "firstName"=>"Fred", "lastName"=>"Guy", "gender"=>"m", "age"=>"33", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "email"=>"fbt@fishingmaster.com", "city"=>"Orlando, Florida", "profileURL"=>"http://www.facebook.com/fred.guy.79", "proxiedEmail"=>"", "allowsLogin"=>true, "isExpiredSession"=>false, "missingPermissions"=>"Actions, Status", "lastLoginTime"=>1366051132, "lastUpdated"=>"2013-04-15T18:38:52.818Z", "lastUpdatedTimestamp"=>1366051132818, "oldestDataUpdated"=>"2013-04-15T18:38:52.076Z", "oldestDataUpdatedTimestamp"=>1366051132076}], "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "firstName"=>"Fred", "lastName"=>"Guy", "gender"=>"m", "age"=>"33", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "email"=>"fbt@fishingmaster.com", "city"=>"Orlando, Florida", "profileURL"=>"http://www.facebook.com/fred.guy.79", "proxiedEmail"=>"", "capabilities"=>"Login, Friends, Places", "providers"=>"facebook", "statusCode"=>200, "errorCode"=>0, "statusReason"=>"OK", "callId"=>"4c3a2aa6d002486e9c16d6a0749e1847", "oldestDataUpdatedTimestamp"=>1366051132076, "oldestDataAge"=>777}
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 225ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 14:51:50 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 14:51:50 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 14:51:50 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 14:51:50 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=VsE3dcp%2F4F31g1ooEi9lQiYKaVY%3D&timestamp=2013-04-15%2018%3A38%3A52&UIDSignature=wDC3q9nKvzTKhpen3V3xpCNv4ts%3D&signatureTimestamp=1366051132&loginProviderUID=100002922034023&isSiteUID=false&signature=VsE3dcp%2F4F31g1ooEi9lQiYKaVY%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-15 14:52:05 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"VsE3dcp/4F31g1ooEi9lQiYKaVY=", "timestamp"=>"2013-04-15 18:38:52", "UIDSignature"=>"wDC3q9nKvzTKhpen3V3xpCNv4ts=", "signatureTimestamp"=>"1366051132", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"VsE3dcp/4F31g1ooEi9lQiYKaVY=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+{"UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"bPYE0NrdZxXxJvwY5onxEEGYCrQ=", "timestamp"=>"2013-04-15 18:52:05", "UIDSignature"=>"KTVpJOEN96Jm2B3O/2LZz1hZYiE=", "signatureTimestamp"=>"1366051925", "isSiteUser"=>true, "isConnected"=>true, "isLoggedIn"=>true, "isTempUser"=>false, "loginProvider"=>"facebook", "loginProviderUID"=>"100002922034023", "isSiteUID"=>false, "identities"=>[{"provider"=>"facebook", "providerUID"=>"100002922034023", "isLoginIdentity"=>true, "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "firstName"=>"Fred", "lastName"=>"Guy", "gender"=>"m", "age"=>"33", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "email"=>"fbt@fishingmaster.com", "city"=>"Orlando, Florida", "profileURL"=>"http://www.facebook.com/fred.guy.79", "proxiedEmail"=>"", "allowsLogin"=>true, "isExpiredSession"=>false, "missingPermissions"=>"Actions, Status", "lastLoginTime"=>1366051132, "lastUpdated"=>"2013-04-15T18:38:52.818Z", "lastUpdatedTimestamp"=>1366051132818, "oldestDataUpdated"=>"2013-04-15T18:38:52.076Z", "oldestDataUpdatedTimestamp"=>1366051132076}], "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "firstName"=>"Fred", "lastName"=>"Guy", "gender"=>"m", "age"=>"33", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "email"=>"fbt@fishingmaster.com", "city"=>"Orlando, Florida", "profileURL"=>"http://www.facebook.com/fred.guy.79", "proxiedEmail"=>"", "capabilities"=>"Login, Friends, Places", "providers"=>"facebook", "statusCode"=>200, "errorCode"=>0, "statusReason"=>"OK", "callId"=>"99f55a98706c493b9049f42c5ac11743", "oldestDataUpdatedTimestamp"=>1366051132076, "oldestDataAge"=>793}
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Compiled application.css  (0ms)  (pid 16138)
+Completed 200 OK in 246ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 14:52:05 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 14:52:05 -0400
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 14:52:05 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 14:52:05 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=VsE3dcp%2F4F31g1ooEi9lQiYKaVY%3D&timestamp=2013-04-15%2018%3A38%3A52&UIDSignature=wDC3q9nKvzTKhpen3V3xpCNv4ts%3D&signatureTimestamp=1366051132&loginProviderUID=100002922034023&isSiteUID=false&signature=VsE3dcp%2F4F31g1ooEi9lQiYKaVY%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-15 14:52:18 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"VsE3dcp/4F31g1ooEi9lQiYKaVY=", "timestamp"=>"2013-04-15 18:38:52", "UIDSignature"=>"wDC3q9nKvzTKhpen3V3xpCNv4ts=", "signatureTimestamp"=>"1366051132", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"VsE3dcp/4F31g1ooEi9lQiYKaVY=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+{"UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"HNl4YNsVBRSL3e3B3AJFPx3C0Kc=", "timestamp"=>"2013-04-15 18:52:18", "UIDSignature"=>"pVlpoclZJ7k6qXVWAWje+l06UBk=", "signatureTimestamp"=>"1366051938", "isSiteUser"=>true, "isConnected"=>true, "isLoggedIn"=>true, "isTempUser"=>false, "loginProvider"=>"facebook", "loginProviderUID"=>"100002922034023", "isSiteUID"=>false, "identities"=>[{"provider"=>"facebook", "providerUID"=>"100002922034023", "isLoginIdentity"=>true, "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "firstName"=>"Fred", "lastName"=>"Guy", "gender"=>"m", "age"=>"33", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "email"=>"fbt@fishingmaster.com", "city"=>"Orlando, Florida", "profileURL"=>"http://www.facebook.com/fred.guy.79", "proxiedEmail"=>"", "allowsLogin"=>true, "isExpiredSession"=>false, "missingPermissions"=>"Actions, Status", "lastLoginTime"=>1366051132, "lastUpdated"=>"2013-04-15T18:38:52.818Z", "lastUpdatedTimestamp"=>1366051132818, "oldestDataUpdated"=>"2013-04-15T18:38:52.076Z", "oldestDataUpdatedTimestamp"=>1366051132076}], "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "firstName"=>"Fred", "lastName"=>"Guy", "gender"=>"m", "age"=>"33", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "email"=>"fbt@fishingmaster.com", "city"=>"Orlando, Florida", "profileURL"=>"http://www.facebook.com/fred.guy.79", "proxiedEmail"=>"", "capabilities"=>"Login, Friends, Places", "providers"=>"facebook", "statusCode"=>200, "errorCode"=>0, "statusReason"=>"OK", "callId"=>"38a636e283fe4924876163ac6bff0383", "oldestDataUpdatedTimestamp"=>1366051132076, "oldestDataAge"=>806}
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Compiled application.css  (0ms)  (pid 16138)
+Completed 200 OK in 219ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 14:52:18 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 14:52:18 -0400
+Served asset /application.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 14:52:18 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 14:52:18 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 15:00:34 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 15:00:34 -0400
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 15:00:34 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 15:00:34 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 15:00:34 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=H4gCTC7omdkyVAGV6WZMf19RacI%3D&timestamp=2013-04-15%2019%3A00%3A36&UIDSignature=X1JWkpq%2B%2FZun2fOd32I8jsb9FVM%3D&signatureTimestamp=1366052436&loginProviderUID=100002922034023&isSiteUID=false&signature=H4gCTC7omdkyVAGV6WZMf19RacI%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-15 15:00:38 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"H4gCTC7omdkyVAGV6WZMf19RacI=", "timestamp"=>"2013-04-15 19:00:36", "UIDSignature"=>"X1JWkpq+/Zun2fOd32I8jsb9FVM=", "signatureTimestamp"=>"1366052436", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"H4gCTC7omdkyVAGV6WZMf19RacI=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+Completed 500 Internal Server Error in 591ms
+
+NameError (uninitialized constant RGigya::BadParamsOrMethodNames):
+  app/controllers/welcome_controller.rb:16:in `index'
+
+
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.2ms)
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=H4gCTC7omdkyVAGV6WZMf19RacI%3D&timestamp=2013-04-15%2019%3A00%3A36&UIDSignature=X1JWkpq%2B%2FZun2fOd32I8jsb9FVM%3D&signatureTimestamp=1366052436&loginProviderUID=100002922034023&isSiteUID=false&signature=H4gCTC7omdkyVAGV6WZMf19RacI%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-15 15:01:27 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"H4gCTC7omdkyVAGV6WZMf19RacI=", "timestamp"=>"2013-04-15 19:00:36", "UIDSignature"=>"X1JWkpq+/Zun2fOd32I8jsb9FVM=", "signatureTimestamp"=>"1366052436", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"H4gCTC7omdkyVAGV6WZMf19RacI=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+Completed 500 Internal Server Error in 171ms
+
+NameError (uninitialized constant RGigya::BadParamsOrMethodNames):
+  app/controllers/welcome_controller.rb:16:in `index'
+
+
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.8ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=H4gCTC7omdkyVAGV6WZMf19RacI%3D&timestamp=2013-04-15%2019%3A00%3A36&UIDSignature=X1JWkpq%2B%2FZun2fOd32I8jsb9FVM%3D&signatureTimestamp=1366052436&loginProviderUID=100002922034023&isSiteUID=false&signature=H4gCTC7omdkyVAGV6WZMf19RacI%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-15 15:02:14 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"H4gCTC7omdkyVAGV6WZMf19RacI=", "timestamp"=>"2013-04-15 19:00:36", "UIDSignature"=>"X1JWkpq+/Zun2fOd32I8jsb9FVM=", "signatureTimestamp"=>"1366052436", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"H4gCTC7omdkyVAGV6WZMf19RacI=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+Completed 500 Internal Server Error in 612ms
+
+RGigya::BadParamsOrMethodName (RGigya::BadParamsOrMethodName):
+  app/controllers/welcome_controller.rb:16:in `index'
+
+
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=H4gCTC7omdkyVAGV6WZMf19RacI%3D&timestamp=2013-04-15%2019%3A00%3A36&UIDSignature=X1JWkpq%2B%2FZun2fOd32I8jsb9FVM%3D&signatureTimestamp=1366052436&loginProviderUID=100002922034023&isSiteUID=false&signature=H4gCTC7omdkyVAGV6WZMf19RacI%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-15 15:03:00 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"H4gCTC7omdkyVAGV6WZMf19RacI=", "timestamp"=>"2013-04-15 19:00:36", "UIDSignature"=>"X1JWkpq+/Zun2fOd32I8jsb9FVM=", "signatureTimestamp"=>"1366052436", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"H4gCTC7omdkyVAGV6WZMf19RacI=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+Completed 500 Internal Server Error in 184ms
+
+RGigya::BadParamsOrMethodName (Missing required parameter):
+  app/controllers/welcome_controller.rb:16:in `index'
+
+
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.5ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=H4gCTC7omdkyVAGV6WZMf19RacI%3D&timestamp=2013-04-15%2019%3A00%3A36&UIDSignature=X1JWkpq%2B%2FZun2fOd32I8jsb9FVM%3D&signatureTimestamp=1366052436&loginProviderUID=100002922034023&isSiteUID=false&signature=H4gCTC7omdkyVAGV6WZMf19RacI%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-15 15:03:48 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"H4gCTC7omdkyVAGV6WZMf19RacI=", "timestamp"=>"2013-04-15 19:00:36", "UIDSignature"=>"X1JWkpq+/Zun2fOd32I8jsb9FVM=", "signatureTimestamp"=>"1366052436", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"H4gCTC7omdkyVAGV6WZMf19RacI=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+Completed 500 Internal Server Error in 555ms
+
+RGigya::BadParamsOrMethodName (Missing required parameter - Missing required parameter: ApiKey):
+  app/controllers/welcome_controller.rb:16:in `index'
+
+
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.8ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=H4gCTC7omdkyVAGV6WZMf19RacI%3D&timestamp=2013-04-15%2019%3A00%3A36&UIDSignature=X1JWkpq%2B%2FZun2fOd32I8jsb9FVM%3D&signatureTimestamp=1366052436&loginProviderUID=100002922034023&isSiteUID=false&signature=H4gCTC7omdkyVAGV6WZMf19RacI%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-15 15:04:24 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"H4gCTC7omdkyVAGV6WZMf19RacI=", "timestamp"=>"2013-04-15 19:00:36", "UIDSignature"=>"X1JWkpq+/Zun2fOd32I8jsb9FVM=", "signatureTimestamp"=>"1366052436", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"H4gCTC7omdkyVAGV6WZMf19RacI=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+Completed 500 Internal Server Error in 196ms
+
+RGigya::BadParamsOrMethodName (Missing required parameter: ApiKey):
+  app/controllers/welcome_controller.rb:16:in `index'
+
+
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/welcome.html" for 127.0.0.1 at 2013-04-15 16:41:42 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 18ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:41:42 -0400
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:41:42 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:41:42 -0400
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:41:42 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=mBUP4adFdaB3gZEBJofTuZils60%3D&timestamp=2013-04-15%2020%3A41%3A44&UIDSignature=kwtIVTZqZ3rRlZmL8h5kEjNSE%2FQ%3D&signatureTimestamp=1366058504&loginProviderUID=100002922034023&isSiteUID=false&signature=mBUP4adFdaB3gZEBJofTuZils60%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-15 16:41:45 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"mBUP4adFdaB3gZEBJofTuZils60=", "timestamp"=>"2013-04-15 20:41:44", "UIDSignature"=>"kwtIVTZqZ3rRlZmL8h5kEjNSE/Q=", "signatureTimestamp"=>"1366058504", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"mBUP4adFdaB3gZEBJofTuZils60=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+Completed 500 Internal Server Error in 638ms
+
+RGigya::BadParamsOrMethodName (Missing required parameter: ApiKey):
+  app/controllers/welcome_controller.rb:16:in `index'
+
+
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.6ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=mBUP4adFdaB3gZEBJofTuZils60%3D&timestamp=2013-04-15%2020%3A41%3A44&UIDSignature=kwtIVTZqZ3rRlZmL8h5kEjNSE%2FQ%3D&signatureTimestamp=1366058504&loginProviderUID=100002922034023&isSiteUID=false&signature=mBUP4adFdaB3gZEBJofTuZils60%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-15 16:42:44 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"mBUP4adFdaB3gZEBJofTuZils60=", "timestamp"=>"2013-04-15 20:41:44", "UIDSignature"=>"kwtIVTZqZ3rRlZmL8h5kEjNSE/Q=", "signatureTimestamp"=>"1366058504", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"mBUP4adFdaB3gZEBJofTuZils60=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 572ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:42:45 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:42:45 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:42:45 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:42:45 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=mBUP4adFdaB3gZEBJofTuZils60%3D&timestamp=2013-04-15%2020%3A41%3A44&UIDSignature=kwtIVTZqZ3rRlZmL8h5kEjNSE%2FQ%3D&signatureTimestamp=1366058504&loginProviderUID=100002922034023&isSiteUID=false&signature=mBUP4adFdaB3gZEBJofTuZils60%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-15 16:43:32 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"mBUP4adFdaB3gZEBJofTuZils60=", "timestamp"=>"2013-04-15 20:41:44", "UIDSignature"=>"kwtIVTZqZ3rRlZmL8h5kEjNSE/Q=", "signatureTimestamp"=>"1366058504", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"mBUP4adFdaB3gZEBJofTuZils60=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 201ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:43:32 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:43:32 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:43:32 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:43:32 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=mBUP4adFdaB3gZEBJofTuZils60%3D&timestamp=2013-04-15%2020%3A41%3A44&UIDSignature=kwtIVTZqZ3rRlZmL8h5kEjNSE%2FQ%3D&signatureTimestamp=1366058504&loginProviderUID=100002922034023&isSiteUID=false&signature=mBUP4adFdaB3gZEBJofTuZils60%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-15 16:44:01 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"mBUP4adFdaB3gZEBJofTuZils60=", "timestamp"=>"2013-04-15 20:41:44", "UIDSignature"=>"kwtIVTZqZ3rRlZmL8h5kEjNSE/Q=", "signatureTimestamp"=>"1366058504", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"mBUP4adFdaB3gZEBJofTuZils60=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1118ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:44:02 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:44:02 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:44:02 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:44:02 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=mBUP4adFdaB3gZEBJofTuZils60%3D&timestamp=2013-04-15%2020%3A41%3A44&UIDSignature=kwtIVTZqZ3rRlZmL8h5kEjNSE%2FQ%3D&signatureTimestamp=1366058504&loginProviderUID=100002922034023&isSiteUID=false&signature=mBUP4adFdaB3gZEBJofTuZils60%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-15 16:44:29 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"mBUP4adFdaB3gZEBJofTuZils60=", "timestamp"=>"2013-04-15 20:41:44", "UIDSignature"=>"kwtIVTZqZ3rRlZmL8h5kEjNSE/Q=", "signatureTimestamp"=>"1366058504", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"mBUP4adFdaB3gZEBJofTuZils60=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 222ms (Views: 32.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:44:30 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:44:30 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:44:30 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:44:30 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=mBUP4adFdaB3gZEBJofTuZils60%3D&timestamp=2013-04-15%2020%3A41%3A44&UIDSignature=kwtIVTZqZ3rRlZmL8h5kEjNSE%2FQ%3D&signatureTimestamp=1366058504&loginProviderUID=100002922034023&isSiteUID=false&signature=mBUP4adFdaB3gZEBJofTuZils60%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-15 16:44:51 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"mBUP4adFdaB3gZEBJofTuZils60=", "timestamp"=>"2013-04-15 20:41:44", "UIDSignature"=>"kwtIVTZqZ3rRlZmL8h5kEjNSE/Q=", "signatureTimestamp"=>"1366058504", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"mBUP4adFdaB3gZEBJofTuZils60=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 307ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:44:51 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:44:51 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:44:51 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:44:51 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=mBUP4adFdaB3gZEBJofTuZils60%3D&timestamp=2013-04-15%2020%3A41%3A44&UIDSignature=kwtIVTZqZ3rRlZmL8h5kEjNSE%2FQ%3D&signatureTimestamp=1366058504&loginProviderUID=100002922034023&isSiteUID=false&signature=mBUP4adFdaB3gZEBJofTuZils60%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-15 16:47:22 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"mBUP4adFdaB3gZEBJofTuZils60=", "timestamp"=>"2013-04-15 20:41:44", "UIDSignature"=>"kwtIVTZqZ3rRlZmL8h5kEjNSE/Q=", "signatureTimestamp"=>"1366058504", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"mBUP4adFdaB3gZEBJofTuZils60=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+ddddddddddddddd has key
+  Rendered welcome/index.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 259ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:47:23 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:47:23 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:47:23 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:47:23 -0400
+Served asset /application.js - 304 Not Modified (5ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=mBUP4adFdaB3gZEBJofTuZils60%3D&timestamp=2013-04-15%2020%3A41%3A44&UIDSignature=kwtIVTZqZ3rRlZmL8h5kEjNSE%2FQ%3D&signatureTimestamp=1366058504&loginProviderUID=100002922034023&isSiteUID=false&signature=mBUP4adFdaB3gZEBJofTuZils60%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-15 16:49:48 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"mBUP4adFdaB3gZEBJofTuZils60=", "timestamp"=>"2013-04-15 20:41:44", "UIDSignature"=>"kwtIVTZqZ3rRlZmL8h5kEjNSE/Q=", "signatureTimestamp"=>"1366058504", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"mBUP4adFdaB3gZEBJofTuZils60=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `socialize_getUserInfo' for RGigya:Class):
+  app/controllers/welcome_controller.rb:16:in `index'
+
+
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.7ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=mBUP4adFdaB3gZEBJofTuZils60%3D&timestamp=2013-04-15%2020%3A41%3A44&UIDSignature=kwtIVTZqZ3rRlZmL8h5kEjNSE%2FQ%3D&signatureTimestamp=1366058504&loginProviderUID=100002922034023&isSiteUID=false&signature=mBUP4adFdaB3gZEBJofTuZils60%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-15 16:50:19 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"mBUP4adFdaB3gZEBJofTuZils60=", "timestamp"=>"2013-04-15 20:41:44", "UIDSignature"=>"kwtIVTZqZ3rRlZmL8h5kEjNSE/Q=", "signatureTimestamp"=>"1366058504", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"mBUP4adFdaB3gZEBJofTuZils60=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `socialize_getUserInfo' for RGigya:Class):
+  app/controllers/welcome_controller.rb:16:in `index'
+
+
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.8ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=mBUP4adFdaB3gZEBJofTuZils60%3D&timestamp=2013-04-15%2020%3A41%3A44&UIDSignature=kwtIVTZqZ3rRlZmL8h5kEjNSE%2FQ%3D&signatureTimestamp=1366058504&loginProviderUID=100002922034023&isSiteUID=false&signature=mBUP4adFdaB3gZEBJofTuZils60%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-15 16:50:42 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"mBUP4adFdaB3gZEBJofTuZils60=", "timestamp"=>"2013-04-15 20:41:44", "UIDSignature"=>"kwtIVTZqZ3rRlZmL8h5kEjNSE/Q=", "signatureTimestamp"=>"1366058504", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"mBUP4adFdaB3gZEBJofTuZils60=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `socialize_getUserInfo' for RGigya:Class):
+  app/controllers/welcome_controller.rb:16:in `index'
+
+
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.8ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=mBUP4adFdaB3gZEBJofTuZils60%3D&timestamp=2013-04-15%2020%3A41%3A44&UIDSignature=kwtIVTZqZ3rRlZmL8h5kEjNSE%2FQ%3D&signatureTimestamp=1366058504&loginProviderUID=100002922034023&isSiteUID=false&signature=mBUP4adFdaB3gZEBJofTuZils60%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-15 16:51:36 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"mBUP4adFdaB3gZEBJofTuZils60=", "timestamp"=>"2013-04-15 20:41:44", "UIDSignature"=>"kwtIVTZqZ3rRlZmL8h5kEjNSE/Q=", "signatureTimestamp"=>"1366058504", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"mBUP4adFdaB3gZEBJofTuZils60=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+wwwwwwwwwwwwww
+socialize.getUserInfo
+socialize
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `socialize_getUserInfo' for RGigya:Class):
+  app/controllers/welcome_controller.rb:16:in `index'
+
+
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.3ms)
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=mBUP4adFdaB3gZEBJofTuZils60%3D&timestamp=2013-04-15%2020%3A41%3A44&UIDSignature=kwtIVTZqZ3rRlZmL8h5kEjNSE%2FQ%3D&signatureTimestamp=1366058504&loginProviderUID=100002922034023&isSiteUID=false&signature=mBUP4adFdaB3gZEBJofTuZils60%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-15 16:51:37 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"mBUP4adFdaB3gZEBJofTuZils60=", "timestamp"=>"2013-04-15 20:41:44", "UIDSignature"=>"kwtIVTZqZ3rRlZmL8h5kEjNSE/Q=", "signatureTimestamp"=>"1366058504", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"mBUP4adFdaB3gZEBJofTuZils60=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+wwwwwwwwwwwwww
+socialize.getUserInfo
+socialize
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `socialize_getUserInfo' for RGigya:Class):
+  app/controllers/welcome_controller.rb:16:in `index'
+
+
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.8ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=mBUP4adFdaB3gZEBJofTuZils60%3D&timestamp=2013-04-15%2020%3A41%3A44&UIDSignature=kwtIVTZqZ3rRlZmL8h5kEjNSE%2FQ%3D&signatureTimestamp=1366058504&loginProviderUID=100002922034023&isSiteUID=false&signature=mBUP4adFdaB3gZEBJofTuZils60%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-15 16:52:40 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"mBUP4adFdaB3gZEBJofTuZils60=", "timestamp"=>"2013-04-15 20:41:44", "UIDSignature"=>"kwtIVTZqZ3rRlZmL8h5kEjNSE/Q=", "signatureTimestamp"=>"1366058504", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"mBUP4adFdaB3gZEBJofTuZils60=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+wwwwwwwwwwwwww
+socialize.getUserInfo
+socialize
+iiiiiiiiiiiiiiiiiii
+  Rendered welcome/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 261ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 16:52:40 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 16:52:40 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 16:52:41 -0400
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 16:52:41 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-16 11:04:51 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 21ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-16 11:04:51 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-16 11:04:51 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-16 11:04:51 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-16 11:04:51 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-16 11:06:00 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-16 11:06:00 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-16 11:06:00 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-16 11:06:00 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-16 11:06:00 -0400
+Served asset /application.js - 304 Not Modified (4ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-16 11:06:25 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 17ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-16 11:06:25 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-16 11:06:25 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-16 11:06:25 -0400
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-16 11:06:25 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-16 11:07:48 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-16 11:07:48 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-16 11:07:48 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-16 11:07:48 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-16 11:07:48 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-16 11:09:01 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-16 11:09:01 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-16 11:09:01 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-16 11:09:01 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-16 11:09:01 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=%2FsYL4ix9P%2BdaoiPo0%2B9SzcvMRgg%3D&timestamp=2013-04-16%2015%3A10%3A16&UIDSignature=80w4mJkZMYx2kRhKwRD49cmBUeQ%3D&signatureTimestamp=1366125016&loginProviderUID=100002922034023&isSiteUID=false&signature=%2FsYL4ix9P%2BdaoiPo0%2B9SzcvMRgg%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-16 11:10:16 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"/sYL4ix9P+daoiPo0+9SzcvMRgg=", "timestamp"=>"2013-04-16 15:10:16", "UIDSignature"=>"80w4mJkZMYx2kRhKwRD49cmBUeQ=", "signatureTimestamp"=>"1366125016", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"/sYL4ix9P+daoiPo0+9SzcvMRgg=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 583ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-16 11:10:18 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-16 11:10:18 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-16 11:10:18 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-16 11:10:18 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-16 11:10:54 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 17ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-16 11:10:54 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-16 11:10:54 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-16 11:10:54 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-16 11:10:54 -0400
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=1jGSwSUcGHtrAs7jrYjjrNZls%2Fc%3D&timestamp=2013-04-16%2015%3A10%3A56&UIDSignature=7UZBKcRm3LAUoH43zqaq%2B8Nd%2FLc%3D&signatureTimestamp=1366125056&loginProviderUID=100002922034023&isSiteUID=false&signature=1jGSwSUcGHtrAs7jrYjjrNZls%2Fc%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-04-16 11:10:56 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"1jGSwSUcGHtrAs7jrYjjrNZls/c=", "timestamp"=>"2013-04-16 15:10:56", "UIDSignature"=>"7UZBKcRm3LAUoH43zqaq+8Nd/Lc=", "signatureTimestamp"=>"1366125056", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"1jGSwSUcGHtrAs7jrYjjrNZls/c=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 544ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-16 11:10:57 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-16 11:10:57 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-16 11:10:57 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-16 11:10:57 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)

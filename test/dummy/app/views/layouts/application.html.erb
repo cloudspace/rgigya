@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dummy</title>
+  <script type="text/javascript" src="http://cdn.gigya.com/JS/socialize.js?apikey=<add api key here>" ></script>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <script type="text/javascript">
+
+  // Changing the default look and behavior of the plugin using the 'params' object:
+  var params =
+  {
+      showTermsLink:false, // 'terms' link is hidden
+      headerText:"Please Login using one of the following providers:", // adding header text
+      height:145, // changing default plugin size
+      width:700,  // changing default plugin size
+      cid:'',       
+
+      containerID:"loginDiv", // The plugin will embed itself inside the "loginDiv" DIV (will not be a popup) 
+
+      // Changes to the default design of the plugin's design
+      //     Background color is changed to purple, text color to gray and button size is set to 40 pixels:    
+      UIConfig:'<config><body><texts color="#DFDFDF"></texts><controls><snbuttons buttonsize="40"></snbuttons></controls><background background-color="#51286D"></background></body></config>',
+
+      // Change the buttons design style to the 'fullLogo' style:
+      buttonsStyle:'fullLogo',
+
+      // After successful login - the user will be redirected to "https://www.MySite.com/welcome.html" :   
+      redirectURL: "http://dev.rgigya.com/welcome.html"
+
+  }
+
+  </script>
+  
+  
+  
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

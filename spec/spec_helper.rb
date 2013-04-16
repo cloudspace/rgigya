@@ -6,7 +6,7 @@ RSpec.configure do |config|
   
   
   # these need to be filled out for tests to work
-  GIGYA_API_KEY = ""
-  GIGYA_API_SECRET = ""
+  GIGYA_API_KEY = "<add api key here>"
+  GIGYA_API_SECRET = "<add api secret here>"
   
 end
