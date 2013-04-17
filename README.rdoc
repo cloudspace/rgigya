@@ -19,7 +19,7 @@ You will need to setup your own dev site on the gigya platform for testing.
 * Enter a domain and description and click add site
 * Remember the api key and secret for later
 
-=== Without Rails
+=== Without Rails (Standalone)
 
   require 'RGigya'
 
@@ -46,6 +46,8 @@ Then add your api calls in your controllers, models, libraries, etc.
 
 === socialize.notifyLogin
 
+http://developers.gigya.com/037_API_reference/010_Socialize/socialize.notifyLogin
+
   userInfo = {
     'nickname' => 'Gigems', 
     'email' => 'ralph@cloudspace.com',
@@ -57,9 +59,13 @@ Then add your api calls in your controllers, models, libraries, etc.
 
 === gm.notifyAction
 
+http://developers.gigya.com/037_API_reference/040_GM/gm.notifyAction
+
   RGigya.gm_notifyAction(:uid => '1',:action => 'comment_upvote')
 
 === comments.flagComment
+
+http://developers.gigya.com/037_API_reference/030_Comments/comments.flagComment
 
   gigya_params = {
     :commentID => params[:commentID],
@@ -107,6 +113,10 @@ We have included a rails dummy site to give you an idea of how to integrate the 
   cd test/dummy
   bundle
   sudo rails s -p80
+  
+== New Feature Ideas
+
+* Rake tasks that help manage the data in gigya such as removing test users.
 
 == Contributing to RGigya
  
