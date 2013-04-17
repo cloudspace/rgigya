@@ -15,7 +15,7 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "rgigya"
-  gem.homepage = "http://github.com/scottsampson/rgigya"
+  gem.homepage = "http://github.com/cloudspace/rgigya"
   gem.license = "MIT"
   gem.summary = %Q{Ruby Wrapper/SDK for the Gigya api}
   gem.description = %Q{This is a ruby SDK for the Gigya api.}
