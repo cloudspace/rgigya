@@ -32,6 +32,45 @@ describe RGigya do
     url.should match(/https:\/\/comments.gigya.com/)
   end
   
+  it "should use the accounts url when making an accounts api call" do
+    RGigya.stub(:required_parameters) {
+      ''
+    }
+    # we pass in the "_" replaced with "." already
+    url = RGigya.build_url("accounts.getPolicies",{})
+    url.should match(/https:\/\/accounts.gigya.com/)
+  end
+  
+  it "should use the reports url when making a reports api call" do
+    RGigya.stub(:required_parameters) {
+      ''
+    }
+    # we pass in the "_" replaced with "." already
+    url = RGigya.build_url("reports.getChatStats",{})
+    url.should match(/https:\/\/reports.gigya.com/)
+  end
+  
+  
+  it "should use the chats url when making a chats api call" do
+    RGigya.stub(:required_parameters) {
+      ''
+    }
+    # we pass in the "_" replaced with "." already
+    url = RGigya.build_url("chat.getMessages",{})
+    url.should match(/https:\/\/chat.gigya.com/)
+  end
+  
+  it "should use the ds url when making a data store api call" do
+    RGigya.stub(:required_parameters) {
+      ''
+    }
+    # we pass in the "_" replaced with "." already
+    url = RGigya.build_url("ds.get",{})
+    url.should match(/https:\/\/ds.gigya.com/)
+  end
+  
+  
+  
   it "should raise a bad param error if UID is nil" do
     expect {
       RGigya.build_url('socialize.getUserInfo', {:uid => nil})
@@ -103,16 +142,13 @@ describe RGigya do
   end
   
   
-  it "should report method missing if method does not start with comments" do
+  it "should report method missing if method does not start with socialize,gm, accounts,reports, chat,ds or comments" do
     expect {
       RGigya.method_missing(:abc,{})
     }.to raise_error(NameError)
-    expect {
-      RGigya.method_missing(:comments_getComments)
-    }.to raise_error(RGigya::BadParamsOrMethodName)
   end
   
-  it "should not respond to method starting without socialize,gm, or comments" do
+  it "should not respond to method starting without socialize,gm, accounts,reports, chat,ds or comments" do
     RGigya.respond_to?(:abc,false).should be_false
   end
   
@@ -128,6 +164,23 @@ describe RGigya do
   it "should respond_to method starting with comments" do
     RGigya.respond_to?(:comments_getComments,false).should be_true
   end
+  
+  it "should respond_to method starting with accounts" do
+    RGigya.respond_to?(:accounts_getPolicies,false).should be_true
+  end
+  
+  it "should respond_to method starting with reports" do
+    RGigya.respond_to?(:reports_getChatStats,false).should be_true
+  end
+  
+  it "should respond_to method starting with chat" do
+    RGigya.respond_to?(:chat_getMessages,false).should be_true
+  end
+  
+  it "should respond_to method starting with ds" do
+    RGigya.respond_to?(:ds_get,false).should be_true
+  end
+  
   
   it "should print log to standard out" do
     str = "This should print to the screen"

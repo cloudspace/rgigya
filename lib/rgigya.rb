@@ -32,7 +32,11 @@ class RGigya
   @@urls = {
     socialize: "https://socialize-api.gigya.com",
     gm: "https://gm.gigya.com",
-    comments: "https://comments.gigya.com"
+    comments: "https://comments.gigya.com",
+    accounts: "https://accounts.gigya.com",
+    reports: "https://reports.gigya.com",
+    chat: "https://chat.gigya.com",
+    ds: "https://ds.gigya.com"
   }
   
   #
@@ -161,7 +165,7 @@ class RGigya
     
     ##
     # Override respond_to? We can't really give an accurate return here
-    # I am only allowing those methods that start with socialize, gm and comments
+    # I am only allowing those methods that start with those methods in the @urls hash
     #
     # @param [Symbol] sym The method symbol
     # @param [Boolean] include_private Whether you want to include private or not. 
