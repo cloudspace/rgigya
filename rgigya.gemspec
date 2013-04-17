@@ -81,7 +81,7 @@ Gem::Specification.new do |s|
     "test/dummy/vendor/assets/stylesheets/.gitkeep",
     "test/dummy/vendor/plugins/.gitkeep"
   ]
-  s.homepage = "http://github.com/scottsampson/rgigya"
+  s.homepage = "http://github.com/cloudspace/rgigya"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.17"
