@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "lib/rgigya.rb",
+    "rgigya.gemspec",
     "spec/helpers.rb",
     "spec/rgigya_spec.rb",
     "spec/spec_helper.rb",
@@ -81,7 +82,7 @@ Gem::Specification.new do |s|
     "test/dummy/vendor/assets/stylesheets/.gitkeep",
     "test/dummy/vendor/plugins/.gitkeep"
   ]
-  s.homepage = "http://github.com/cloudspace/rgigya"
+  s.homepage = "http://github.com/scottsampson/rgigya"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.17"
