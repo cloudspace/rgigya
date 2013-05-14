@@ -1,6 +1,8 @@
 require 'json'
 require 'httparty'
 require 'CGI'
+require File.dirname(__FILE__)+"/rgigya/sig_utils.rb"
+require File.dirname(__FILE__)+"/rgigya/hash.rb"
 
 #
 # Quick sdk for the gigya api
@@ -22,11 +24,15 @@ require 'CGI'
 # These should be commented out and set in your environments for your rails project.
 # Uncomment below for testing without rails
 #
-# GIGYA_API_KEY = "12345"
-# GIGYA_API_SECRET = "12345"
+# RGigya.config({
+#   :api_key => "12345",
+#   :api_secret => "12345,
+#   :use_ssl => false,
+#   :domain => "us1"
+# })
 
 
-class RGigya
+module RGigya
   
   # Mapping to different urls based on api groupings
   @@urls = {
@@ -38,23 +44,41 @@ class RGigya
     chat: "https://chat.gigya.com",
     ds: "https://ds.gigya.com"
   }
-  
+    
   #
   # Custom Exceptions so we know it came from the library
   # When in use please namespace them appropriately RGigya::ResponseError for readability
   #
-  exceptions = %w[ UIDParamIsNil SiteUIDParamIsNil ResponseError BadParamsOrMethodName ErrorCodeReturned  ]  
+  exceptions = %w[ UIDParamIsNil SiteUIDParamIsNil ResponseError BadParamsOrMethodName ErrorCodeReturned MissingApiKey MissingApiSecret]  
   exceptions.each { |e| const_set(e, Class.new(StandardError)) }
   RGigya::JSONParseError = Class.new(JSON::ParserError)
   
   class << self
     
+    def config(config_data)
+      @@api_key = config_data[:api_key]
+      @@api_secret = config_data[:api_secret]
+      @@use_ssl = config_data[:use_ssl] || false
+      @@domain = config_data[:domain] || "us1"
+      verify_config_data
+    end
+    
+    
+    def verify_config_data
+      if(!defined?(@@api_key)) 
+        raise RGigya::MissingApiKey, "Please provide a Gigya api key in the config data"
+      end
+      if(!defined?(@@api_secret)) 
+        raise RGigya::MissingApiSecret, "Please provide a Gigya api secret in the config data"
+      end
+    end
+    
     #
     # Adds the required params for all api calls
     # 
     def required_parameters
-      params =  "apiKey=#{CGI.escape(GIGYA_API_KEY)}"
-      params += "&secret=#{CGI.escape(GIGYA_API_SECRET)}"
+      params =  "apiKey=#{CGI.escape(@@api_key)}"
+      params += "&secret=#{CGI.escape(@@api_secret)}"
       params += "&format=json"
     end
     
@@ -67,7 +91,7 @@ class RGigya
     # @return [String] the full url to be sent to the api
     #
     # @author Scott Sampson
-    def build_url(method, options = {})
+    def build_url(method, http_method, options = {})
       if options && options.has_key?(:uid) && options[:uid].nil?
         raise RGigya::UIDParamIsNil, ""
       end
@@ -77,11 +101,15 @@ class RGigya
       end
 
       method_type,method_name = method.split(".")
-      url = "#{@@urls[method_type.to_sym]}/#{method}?#{required_parameters}"
-      if(options)
-        options.each do |key,value|
-          url += "&#{key}=#{CGI.escape(value.to_s)}"
+      if(http_method == "POST") 
+        url = "#{@@urls[method_type.to_sym]}/#{method}?#{required_parameters}"
+        if(options)
+          options.each do |key,value|
+            url += "&#{key}=#{CGI.escape(value.to_s)}"
+          end
         end
+      else 
+        url = "#{@@urls[method_type.to_sym]}/#{method}"
       end
       url
     end
@@ -95,10 +123,10 @@ class RGigya
     # @return [Hash] hash of the api results in key/value format
     #
     # @author Scott Sampson
-    def parse_results(method, options = {})
+    def parse_results_secure
       # options = {} if options.is_a?(String) && options.blank?
       begin
-        response = HTTParty.get(build_url(method, options),{:timeout => 10})
+        response = HTTParty.get(build_url(method, "GET", options),{:timeout => 10})
       rescue SocketError,Timeout::Error => e 
         raise RGigya::ResponseError, e.message
       end
@@ -110,6 +138,174 @@ class RGigya
         raise RGigya::JSONParseError, e.message
       end
       doc
+    end
+    
+    # //UTC timestamp.
+    #     $timestamp = (string) time();
+    #     
+    #     //timestamp in milliseconds
+    #     $nonce  = ((string)SigUtils::currentTimeMillis()).rand();
+    #     $httpMethod = "POST";
+    # 
+    #     
+    #     if (!empty($secret))
+    #     {
+    #       $params->put("apiKey", $token);
+    #       
+    #       if ($useHTTPS)
+    #       {
+    #         $params->put("secret", $secret);
+    #       } else
+    #       {
+    #         $params->put("timestamp", $timestamp);
+    #         $params->put("nonce", $nonce);
+    #         
+    #         //signature
+    #         $signature = self::getOAuth1Signature($secret, $httpMethod, $resourceURI, $useHTTPS, $params);
+    #         $params->put("sig", $signature);
+    #       }
+    #     }
+    #     else {
+    #       
+    #       $params->put("oauth_token", $token);
+    #     }
+    
+    
+    def params_with_signature(request_uri,params)
+        timestamp = Time.now.utc.to_s
+        
+        nonce  = rand(SigUtils::current_time_in_milliseconds()).to_s
+        
+        if(params.nil?) 
+          params = {}
+        end
+        
+        params[:timestamp] = timestamp
+        params[:nonce] = nonce
+        params[:apiKey] = @@api_key
+        params[:secret] = @@api_secret
+        
+        
+        # signature_string = SECRET + request_uri + timestamp
+        normalized_url = CGI.escape(request_uri)
+        
+        puts params.inspect
+        
+        query_string = CGI.escape(params.to_query)
+        
+        signature_string = "POST&#{normalized_url}&#{query_string}"
+        
+        digest = SigUtils::calculate_signature(signature_string,Base64.decode64(GIGYA_API_SECRET))
+        signature = digest.to_s
+        params[:sig] = signature
+        return params
+    end
+    
+    
+        # 
+        #     
+        #     
+        #     
+        #     
+        #     private static function getOAuth1Signature($key, $httpMethod, $url, $isSecureConnection, $requestParams) 
+        # {
+        #   // Create the BaseString.
+        #   $baseString = self::calcOAuth1BaseString($httpMethod, $url, $isSecureConnection, $requestParams);
+        #   return SigUtils::calcSignature($baseString,$key);
+        # }
+        # 
+        # private static function calcOAuth1BaseString($httpMethod, $url, $isSecureConnection, $requestParams) 
+        # {
+        # 
+        # 
+        #   $normalizedUrl = "";
+        #   $u = parse_url($url);
+        #   $protocol = strtolower($u["scheme"]);
+        # 
+        #   if(array_key_exists('port',$u))
+        #   {
+        #     $port = $u['port'];
+        #   }
+        #   else    
+        #     $port = null;
+        # 
+        #   $normalizedUrl .= $protocol."://";
+        #   $normalizedUrl .= strtolower($u["host"]);
+        # 
+        #   if  ( $port != ""  && (($protocol=="http" && $port!=80) || ($protocol=="https" && $port!=443))) 
+        #   {
+        #     $normalizedUrl .= ':'.$port;
+        #           }         
+        #   $normalizedUrl .= $u["path"];
+        # 
+        #   // Create a sorted list of query parameters
+        #   $amp = "";
+        #   $queryString = "";
+        #   $keys = $requestParams->getKeys();
+        #   sort($keys);
+        #   foreach($keys as $key) 
+        #   {
+        #     $value = $requestParams->getString($key);
+        #     if ($value !== false && $value != "0" && empty($value))
+        #     {
+        #       $value = "";
+        #     }
+        # 
+        #     //curl is sending 1 and 0 when the value is boolean.
+        #     //so in order to create a valid signature we're changing false to 0 and true to 1.
+        #     if($value === false)$value = "0"; 
+        #     if($value === true)$value = "1";
+        #     $queryString .= $amp.$key."=".self::UrlEncode($value);
+        #     $amp = "&";
+        #   }
+        # 
+        #   // Construct the base string from the HTTP method, the URL and the parameters 
+        #   $baseString = strtoupper($httpMethod)."&".self::UrlEncode($normalizedUrl)."&".self::UrlEncode($queryString);
+        #   return $baseString;
+        # 
+        # }
+    
+    
+    
+    
+    #
+    # sends the http call with signature to gigya and parses the result
+    # 
+    # @param [String] method The method name to be called in the gigya api
+    # @param [Hash] options Hash of key value pairs passed to the gigya api
+    #
+    # @return [Hash] hash of the api results in key/value format
+    #
+    # @author Scott Sampson
+    def parse_results_with_signature(method, options)
+      request_uri = build_url(method, "POST", options)
+      begin
+        response = HTTParty.post(request_uri, { :query => params_with_signature(request_uri,options) })
+      rescue SocketError,Timeout::Error => e 
+        raise RGigya::ResponseError, e.message
+      end
+      
+      begin
+        doc = JSON(response.body)
+      rescue JSON::ParserError => e
+        raise RGigya::JSONParseError, e.message
+      end
+      doc
+    end
+    
+    
+    #
+    # sends the api call to gigya and parses the result with appropriate method
+    # 
+    # @param [String] method The method name to be called in the gigya api
+    # @param [Hash] options Hash of key value pairs passed to the gigya api
+    #
+    # @return [Hash] hash of the api results in key/value format
+    #
+    # @author Scott Sampson
+    def parse_results(method, options = {})
+      verify_config_data
+      return @@use_ssl ? parse_results_secure(method,options) : parse_results_with_signature(method,options)
     end
     
     #
