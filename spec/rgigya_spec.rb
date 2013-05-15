@@ -8,7 +8,7 @@ describe RGigya do
     }
     # we pass in the "_" replaced with "." already
     url = RGigya.build_url("socialize.getUserInfo","GET",{})
-    url.should match(/https:\/\/socialize-api.gigya.com/)
+    url.should match(/http:\/\/socialize.us1.gigya.com/)
   end
   
   
@@ -19,7 +19,7 @@ describe RGigya do
     }
     # we pass in the "_" replaced with "." already
     url = RGigya.build_url("gm.notifyAction","GET",{})
-    url.should match(/https:\/\/gm.gigya.com/)
+    url.should match(/http:\/\/gm.us1.gigya.com/)
   end
   
   
@@ -29,7 +29,7 @@ describe RGigya do
     }
     # we pass in the "_" replaced with "." already
     url = RGigya.build_url("comments.getTopStreams","GET",{})
-    url.should match(/https:\/\/comments.gigya.com/)
+    url.should match(/http:\/\/comments.us1.gigya.com/)
   end
   
   it "should use the accounts url when making an accounts api call" do
@@ -38,7 +38,7 @@ describe RGigya do
     }
     # we pass in the "_" replaced with "." already
     url = RGigya.build_url("accounts.getPolicies","GET",{})
-    url.should match(/https:\/\/accounts.gigya.com/)
+    url.should match(/http:\/\/accounts.us1.gigya.com/)
   end
   
   it "should use the reports url when making a reports api call" do
@@ -47,7 +47,7 @@ describe RGigya do
     }
     # we pass in the "_" replaced with "." already
     url = RGigya.build_url("reports.getChatStats","GET",{})
-    url.should match(/https:\/\/reports.gigya.com/)
+    url.should match(/http:\/\/reports.us1.gigya.com/)
   end
   
   
@@ -57,7 +57,7 @@ describe RGigya do
     }
     # we pass in the "_" replaced with "." already
     url = RGigya.build_url("chat.getMessages","GET",{})
-    url.should match(/https:\/\/chat.gigya.com/)
+    url.should match(/http:\/\/chat.us1.gigya.com/)
   end
   
   it "should use the ds url when making a data store api call" do
@@ -66,7 +66,7 @@ describe RGigya do
     }
     # we pass in the "_" replaced with "." already
     url = RGigya.build_url("ds.get","GET",{})
-    url.should match(/https:\/\/ds.gigya.com/)
+    url.should match(/http:\/\/ds.us1.gigya.com/)
   end
   
   
