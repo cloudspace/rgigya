@@ -7,7 +7,7 @@ describe RGigya do
       ''
     }
     # we pass in the "_" replaced with "." already
-    url = RGigya.build_url("socialize.getUserInfo",{})
+    url = RGigya.build_url("socialize.getUserInfo","GET",{})
     url.should match(/https:\/\/socialize-api.gigya.com/)
   end
   
@@ -18,7 +18,7 @@ describe RGigya do
       ''
     }
     # we pass in the "_" replaced with "." already
-    url = RGigya.build_url("gm.notifyAction",{})
+    url = RGigya.build_url("gm.notifyAction","GET",{})
     url.should match(/https:\/\/gm.gigya.com/)
   end
   
@@ -28,7 +28,7 @@ describe RGigya do
       ''
     }
     # we pass in the "_" replaced with "." already
-    url = RGigya.build_url("comments.getTopStreams",{})
+    url = RGigya.build_url("comments.getTopStreams","GET",{})
     url.should match(/https:\/\/comments.gigya.com/)
   end
   
@@ -37,7 +37,7 @@ describe RGigya do
       ''
     }
     # we pass in the "_" replaced with "." already
-    url = RGigya.build_url("accounts.getPolicies",{})
+    url = RGigya.build_url("accounts.getPolicies","GET",{})
     url.should match(/https:\/\/accounts.gigya.com/)
   end
   
@@ -46,7 +46,7 @@ describe RGigya do
       ''
     }
     # we pass in the "_" replaced with "." already
-    url = RGigya.build_url("reports.getChatStats",{})
+    url = RGigya.build_url("reports.getChatStats","GET",{})
     url.should match(/https:\/\/reports.gigya.com/)
   end
   
@@ -56,7 +56,7 @@ describe RGigya do
       ''
     }
     # we pass in the "_" replaced with "." already
-    url = RGigya.build_url("chat.getMessages",{})
+    url = RGigya.build_url("chat.getMessages","GET",{})
     url.should match(/https:\/\/chat.gigya.com/)
   end
   
@@ -65,7 +65,7 @@ describe RGigya do
       ''
     }
     # we pass in the "_" replaced with "." already
-    url = RGigya.build_url("ds.get",{})
+    url = RGigya.build_url("ds.get","GET",{})
     url.should match(/https:\/\/ds.gigya.com/)
   end
   
@@ -73,13 +73,13 @@ describe RGigya do
   
   it "should raise a bad param error if UID is nil" do
     expect {
-      RGigya.build_url('socialize.getUserInfo', {:uid => nil})
+      RGigya.build_url('socialize.getUserInfo', "GET",{:uid => nil})
     }.to raise_error(RGigya::UIDParamIsNil)
   end
   
   it "should raise a bad param error if siteUID is nil" do
     expect {
-      RGigya.build_url('socialize.getUserInfo', {:siteUID => nil})
+      RGigya.build_url('socialize.getUserInfo', "GET",{:siteUID => nil})
     }.to raise_error(RGigya::SiteUIDParamIsNil)
   end
   
