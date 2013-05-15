@@ -49,6 +49,13 @@ module RGigya
   
   class << self
     
+    
+    #
+    # Sets the config data to be used in the api call
+    #
+    # @param [Hash] config_dat Hash of key value pairs passed to the gigya api
+    #
+    # @author Scott Sampson
     def config(config_data)
       @@api_key = config_data[:api_key]
       @@api_secret = config_data[:api_secret]
@@ -57,7 +64,9 @@ module RGigya
       verify_config_data
     end
     
-    
+    # Validates that we have required config data
+    #
+    # @author Scott Sampson
     def verify_config_data
       if(!defined?(@@api_key)) 
         raise RGigya::MissingApiKey, "Please provide a Gigya api key in the config data"
@@ -96,7 +105,7 @@ module RGigya
 
       method_type,method_name = method.split(".")
       if(http_method == "GET") 
-        url = "http://#{method_type}.#{@@domain}.gigya.com/#{method}?#{required_parameters}"
+        url = "https://#{method_type}.#{@@domain}.gigya.com/#{method}?#{required_parameters}"
         if(options)
           options.each do |key,value|
             url += "&#{key}=#{CGI.escape(value.to_s)}"
@@ -110,6 +119,7 @@ module RGigya
     
     #
     # sends the https call to gigya and parses the result
+    # This is used for https get requests
     # 
     # @param [String] method The method name to be called in the gigya api
     # @param [Hash] options Hash of key value pairs passed to the gigya api
@@ -117,7 +127,7 @@ module RGigya
     # @return [Hash] hash of the api results in key/value format
     #
     # @author Scott Sampson
-    def parse_results_secure
+    def parse_results_secure(method,options)
       # options = {} if options.is_a?(String) && options.blank?
       begin
         response = HTTParty.get(build_url(method, "GET", options),{:timeout => 10})
@@ -134,53 +144,42 @@ module RGigya
       doc
     end
     
-    # //UTC timestamp.
-    #     $timestamp = (string) time();
-    #     
-    #     //timestamp in milliseconds
-    #     $nonce  = ((string)SigUtils::currentTimeMillis()).rand();
-    #     $httpMethod = "POST";
-    # 
-    #     
-    #     if (!empty($secret))
-    #     {
-    #       $params->put("apiKey", $token);
-    #       
-    #       if ($useHTTPS)
-    #       {
-    #         $params->put("secret", $secret);
-    #       } else
-    #       {
-    #         $params->put("timestamp", $timestamp);
-    #         $params->put("nonce", $nonce);
-    #         
-    #         //signature
-    #         $signature = self::getOAuth1Signature($secret, $httpMethod, $resourceURI, $useHTTPS, $params);
-    #         $params->put("sig", $signature);
-    #       }
-    #     }
-    #     else {
-    #       
-    #       $params->put("oauth_token", $token);
-    #     }
     
+    #
+    # Orders the params hash for the signature
+    # Changes boolean values to their string equivalent
+    # 
+    # @param [Hash] h Hash of key value pairs passed to the gigya api
+    #
+    # @return [Hash] hash of the params being passed to the gigya api with their keys in alpha order
+    #
+    # @author Scott Sampson
     def prepare_for_signature(h)
       ordered_hash = {} #insert order with hash is preserved since ruby 1.9.2
       h.keys.sort.each do |key|
         value = h[key]
         if(!!value == value) #duck typeing.......quack
-          ordered_hash[key] = value ? "1" : "0"
+          ordered_hash[key] = value.to_s
         else
-          ordered_hash[key] = value
+          ordered_hash[key] = CGI.escape(value)
         end
       end
       return ordered_hash
     end
     
     
+    #
+    # Adds Timestamp, nonce and signatures to the params hash
+    # 
+    # @param [String] request_uri the url we are using for the api call
+    # @param [Hash] params Hash of key value pairs passed to the gigya api
+    #
+    # @return [Hash] hash of the params being passed to the gigya api
+    # with timestamp, nonce and signature added
+    #
+    # @author Scott Sampson
     def params_with_signature(request_uri,params)
         timestamp = Time.now.utc.strftime("%s")
-        
         nonce  = SigUtils::current_time_in_milliseconds()
         
         params = {} if params.nil?
@@ -191,99 +190,23 @@ module RGigya
         params[:timestamp] = timestamp
         params[:nonce] = nonce
         params[:apiKey] = @@api_key
-        # params[:secret] = @@api_secret
         
-        
-        # signature_string = SECRET + request_uri + timestamp
         normalized_url = CGI.escape(request_uri)
         
-        # puts params.inspect
-        
         query_string = CGI.escape(prepare_for_signature(params).to_query)
-                
-        puts 'ffffffff - ' + query_string
-        
+                        
+        # signature_string = SECRET + request_uri + timestamp
         signature_string = "POST&#{normalized_url}&#{query_string}"
         
-        puts 'bbbbb = ' + signature_string
-        
-        # digest = SigUtils::calculate_signature(signature_string,Base64.decode64(@@api_secret))
         digest = SigUtils::calculate_signature(signature_string,@@api_secret)
         signature = digest.to_s
         params[:sig] = signature
-        puts 'sssssssss - ' + signature
         return params
     end
     
-    
-        # 
-        #     
-        #     
-        #     
-        #     
-        #     private static function getOAuth1Signature($key, $httpMethod, $url, $isSecureConnection, $requestParams) 
-        # {
-        #   // Create the BaseString.
-        #   $baseString = self::calcOAuth1BaseString($httpMethod, $url, $isSecureConnection, $requestParams);
-        #   return SigUtils::calcSignature($baseString,$key);
-        # }
-        # 
-        # private static function calcOAuth1BaseString($httpMethod, $url, $isSecureConnection, $requestParams) 
-        # {
-        # 
-        # 
-        #   $normalizedUrl = "";
-        #   $u = parse_url($url);
-        #   $protocol = strtolower($u["scheme"]);
-        # 
-        #   if(array_key_exists('port',$u))
-        #   {
-        #     $port = $u['port'];
-        #   }
-        #   else    
-        #     $port = null;
-        # 
-        #   $normalizedUrl .= $protocol."://";
-        #   $normalizedUrl .= strtolower($u["host"]);
-        # 
-        #   if  ( $port != ""  && (($protocol=="http" && $port!=80) || ($protocol=="https" && $port!=443))) 
-        #   {
-        #     $normalizedUrl .= ':'.$port;
-        #           }         
-        #   $normalizedUrl .= $u["path"];
-        # 
-        #   // Create a sorted list of query parameters
-        #   $amp = "";
-        #   $queryString = "";
-        #   $keys = $requestParams->getKeys();
-        #   sort($keys);
-        #   foreach($keys as $key) 
-        #   {
-        #     $value = $requestParams->getString($key);
-        #     if ($value !== false && $value != "0" && empty($value))
-        #     {
-        #       $value = "";
-        #     }
-        # 
-        #     //curl is sending 1 and 0 when the value is boolean.
-        #     //so in order to create a valid signature we're changing false to 0 and true to 1.
-        #     if($value === false)$value = "0"; 
-        #     if($value === true)$value = "1";
-        #     $queryString .= $amp.$key."=".self::UrlEncode($value);
-        #     $amp = "&";
-        #   }
-        # 
-        #   // Construct the base string from the HTTP method, the URL and the parameters 
-        #   $baseString = strtoupper($httpMethod)."&".self::UrlEncode($normalizedUrl)."&".self::UrlEncode($queryString);
-        #   return $baseString;
-        # 
-        # }
-    
-    
-    
-    
     #
     # sends the http call with signature to gigya and parses the result
+    # This is for http post requests
     # 
     # @param [String] method The method name to be called in the gigya api
     # @param [Hash] options Hash of key value pairs passed to the gigya api
@@ -291,33 +214,18 @@ module RGigya
     # @return [Hash] hash of the api results in key/value format
     #
     # @author Scott Sampson
-    # string(4) "POST" string(19) 
-    # "socialize.gigya.com" string(22) 
-    # "/socialize.getUserInfo" object(GSObject)#3 
-    # (1) { ["map":"GSObject":private]=> array(8) { 
-    #     ["uid"]=> string(1) "1" 
-    #     ["format"]=> string(4) "json" 
-    #     ["httpStatusCodes"]=> string(5) "false" 
-    #     ["sdk"]=> string(8) "php_2.15" 
-    #     ["apiKey"]=> string(66) "3_R8EXCCYB4F_2ROtTKRd1es1ymkHtjHnoFsDrLjAnxMdMnp94Xwfjquh-TmYq3X7J" 
-    #     ["timestamp"]=> string(10) "1368644100" 
-    #     ["nonce"]=> string(13) "1368644100214" 
-    #     ["sig"]=> string(28) "VMPH9rYiObObGDpVbDqqWtIhysE=" } 
-    #   } string(66) "3_R8EXCCYB4F_2ROtTKRd1es1ymkHtjHnoFsDrLjAnxMdMnp94Xwfjquh-TmYq3X7J"
     
     def parse_results_with_signature(method, options)
       request_uri = build_url(method, "POST", options)
-      puts request_uri.inspect
-      # puts 'ccccccccccccc = ' + params_with_signature(request_uri,options).inspect
-      begin
-        
+      begin        
         response = HTTParty.post(request_uri, { :body => params_with_signature(request_uri,options) })
-        puts response.request.inspect
-      rescue SocketError,Timeout::Error => e 
+      rescue URI::InvalidURIError
+        # need to treat this like method missing
+        return false
+      rescue SocketError,Timeout::Error => e
         raise RGigya::ResponseError, e.message
       end
       
-      puts 'ppppppppp - ' + response.code.inspect 
       
       begin
         doc = JSON(response.body)
@@ -410,7 +318,7 @@ module RGigya
     
     
         
-    ##
+    #
     # Custom log method, if we are in rails we should log any errors for debugging purposes
     #
     # @param [String] log_str string to log

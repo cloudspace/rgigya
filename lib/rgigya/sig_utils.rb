@@ -34,13 +34,9 @@ module RGigya
     	end
 	
       def calculate_signature(base,key)
-    		base = base.encode('UTF-8')
-    		puts 'babbbbaseasese - ' + base
-        # Digest::SHA1.hexdigest 'foo'
-        # return Base64.encode64((HMAC::SHA1.new('key') << 'base').digest).strip
-        raw = OpenSSL::HMAC.digest(OpenSSL::Digest::Digest.new('sha1'), Base64.decode64(key), base)
-        puts 'rrrrrrrrrr - ' + raw  
-    		return Base64.encode64(raw)
+        base = base.encode('UTF-8')
+        raw = OpenSSL::HMAC.digest('sha1',Base64.decode64(key), base)
+    		return Base64.encode64(raw).chomp.gsub(/\n/,'')
     	end
   	  
     end
