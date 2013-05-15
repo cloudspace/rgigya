@@ -95,7 +95,7 @@ module RGigya
       end
 
       method_type,method_name = method.split(".")
-      if(http_method == "POST") 
+      if(http_method == "GET") 
         url = "http://#{method_type}.#{@@domain}.gigya.com/#{method}?#{required_parameters}"
         if(options)
           options.each do |key,value|
@@ -164,34 +164,54 @@ module RGigya
     #       $params->put("oauth_token", $token);
     #     }
     
+    def prepare_for_signature(h)
+      ordered_hash = {} #insert order with hash is preserved since ruby 1.9.2
+      h.keys.sort.each do |key|
+        value = h[key]
+        if(!!value == value) #duck typeing.......quack
+          ordered_hash[key] = value ? "1" : "0"
+        else
+          ordered_hash[key] = value
+        end
+      end
+      return ordered_hash
+    end
+    
     
     def params_with_signature(request_uri,params)
-        timestamp = Time.now.utc.to_s
+        timestamp = Time.now.utc.strftime("%s")
         
-        nonce  = rand(SigUtils::current_time_in_milliseconds()).to_s
+        nonce  = SigUtils::current_time_in_milliseconds()
         
-        if(params.nil?) 
-          params = {}
-        end
+        params = {} if params.nil?
         
+        params[:format] = "json"
+        params[:httpStatusCodes] = false
+        params[:sdk] = "ruby_1.2.1"
         params[:timestamp] = timestamp
         params[:nonce] = nonce
         params[:apiKey] = @@api_key
-        params[:secret] = @@api_secret
+        # params[:secret] = @@api_secret
         
         
         # signature_string = SECRET + request_uri + timestamp
         normalized_url = CGI.escape(request_uri)
         
-        puts params.inspect
+        # puts params.inspect
         
-        query_string = CGI.escape(params.to_query)
+        query_string = CGI.escape(prepare_for_signature(params).to_query)
+                
+        puts 'ffffffff - ' + query_string
         
         signature_string = "POST&#{normalized_url}&#{query_string}"
         
-        digest = SigUtils::calculate_signature(signature_string,Base64.decode64(GIGYA_API_SECRET))
+        puts 'bbbbb = ' + signature_string
+        
+        # digest = SigUtils::calculate_signature(signature_string,Base64.decode64(@@api_secret))
+        digest = SigUtils::calculate_signature(signature_string,@@api_secret)
         signature = digest.to_s
         params[:sig] = signature
+        puts 'sssssssss - ' + signature
         return params
     end
     
@@ -271,13 +291,33 @@ module RGigya
     # @return [Hash] hash of the api results in key/value format
     #
     # @author Scott Sampson
+    # string(4) "POST" string(19) 
+    # "socialize.gigya.com" string(22) 
+    # "/socialize.getUserInfo" object(GSObject)#3 
+    # (1) { ["map":"GSObject":private]=> array(8) { 
+    #     ["uid"]=> string(1) "1" 
+    #     ["format"]=> string(4) "json" 
+    #     ["httpStatusCodes"]=> string(5) "false" 
+    #     ["sdk"]=> string(8) "php_2.15" 
+    #     ["apiKey"]=> string(66) "3_R8EXCCYB4F_2ROtTKRd1es1ymkHtjHnoFsDrLjAnxMdMnp94Xwfjquh-TmYq3X7J" 
+    #     ["timestamp"]=> string(10) "1368644100" 
+    #     ["nonce"]=> string(13) "1368644100214" 
+    #     ["sig"]=> string(28) "VMPH9rYiObObGDpVbDqqWtIhysE=" } 
+    #   } string(66) "3_R8EXCCYB4F_2ROtTKRd1es1ymkHtjHnoFsDrLjAnxMdMnp94Xwfjquh-TmYq3X7J"
+    
     def parse_results_with_signature(method, options)
       request_uri = build_url(method, "POST", options)
+      puts request_uri.inspect
+      # puts 'ccccccccccccc = ' + params_with_signature(request_uri,options).inspect
       begin
-        response = HTTParty.post(request_uri, { :query => params_with_signature(request_uri,options) })
+        
+        response = HTTParty.post(request_uri, { :body => params_with_signature(request_uri,options) })
+        puts response.request.inspect
       rescue SocketError,Timeout::Error => e 
         raise RGigya::ResponseError, e.message
       end
+      
+      puts 'ppppppppp - ' + response.code.inspect 
       
       begin
         doc = JSON(response.body)
@@ -339,6 +379,7 @@ module RGigya
       
       method = sym.to_s.gsub("_",".")
       method_type,method_name = method.split(".")
+      
       if(@@valid_methods.include?(method_type.to_sym))
         results = parse_results(method, args.first)
       else 

@@ -30,14 +30,17 @@ module RGigya
   	  end
   	  
   	  def current_time_in_milliseconds()
-        return Time.now.to_f*1000.floor
+        return DateTime.now.strftime("%Q")
     	end
 	
       def calculate_signature(base,key)
     		base = base.encode('UTF-8')
+    		puts 'babbbbaseasese - ' + base
         # Digest::SHA1.hexdigest 'foo'
         # return Base64.encode64((HMAC::SHA1.new('key') << 'base').digest).strip
-    		return Base64.encode64(OpenSSL::HMAC.digest(OpenSSL::Digest::Digest.new('sha1'), key, base))
+        raw = OpenSSL::HMAC.digest(OpenSSL::Digest::Digest.new('sha1'), Base64.decode64(key), base)
+        puts 'rrrrrrrrrr - ' + raw  
+    		return Base64.encode64(raw)
     	end
   	  
     end

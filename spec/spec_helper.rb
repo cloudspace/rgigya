@@ -5,8 +5,8 @@ RSpec.configure do |config|
   config.include Helpers
   
   # To verify Values
-  GIGYA_API_KEY = "<add api key here>"
-  GIGYA_API_SECRET = "<add api secret here>"
+  # GIGYA_API_KEY = "<add api key here>"
+  # GIGYA_API_SECRET = "<add api secret here>"
   
   
   # these need to be filled out for tests to work
