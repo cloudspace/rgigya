@@ -35,6 +35,7 @@ require File.dirname(__FILE__)+"/rgigya/hash.rb"
 
 module RGigya
   
+
   # List of Available API methods
   @@valid_methods = [:socialize, :gm, :comments, :accounts, :reports, :chat, :ds]
       
