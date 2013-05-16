@@ -15,4 +15,40 @@ describe "RGigyaSignature" do
   
   
   it_behaves_like RGigya
+  
+  it "should verify signature after successful login" do
+    userInfo = {
+      'nickname' => 'Gigems', 
+      'email' => 'ralph@cloudspace.com',
+      'firstName' => 'Ralph', 
+      'lastName' => 'Masterson'
+    }
+    
+    response = RGigya.socialize_notifyLogin({
+      :siteUID => '1',
+      :userInfo => userInfo.to_json
+    })
+    
+    RGigya::SigUtils::validate_user_signature(response['UID'], response['signatureTimestamp'], response['UIDSignature']).should be_true
+    
+  end
+  
+  
+  # it "should verify friends signature after successful api call" do
+  #     userInfo = {
+  #       'nickname' => 'Gigems', 
+  #       'email' => 'ralph@cloudspace.com',
+  #       'firstName' => 'Ralph', 
+  #       'lastName' => 'Masterson'
+  #     }
+  #     
+  #     response = RGigya.socialize_getFriendsInfo({
+  #       :siteUID => '1',
+  #       :userInfo => userInfo.to_json
+  #     })
+  #     
+  #     RGigya::SigUtils::validate_user_signature(response['UID'], response['signatureTimestamp'], response['UIDSignature']).should be_true
+  #     
+  #   end
+  
 end

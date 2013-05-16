@@ -1,14 +1,16 @@
 
+#if you think about it as a namespace the include RGigya below doesn't seem weird at all
 module RGigya
-
+    
   class SigUtils
-    
-    
+    include RGigya
+      
     class << self  
     
-  	  def validate_user_signature(uid, timestamp, secret, signature) 
+  	  def validate_user_signature(uid, timestamp, signature) 
+  	    puts RGigya.class_variable_get(:@@api_secret).inspect
   	    base = "#{timestamp}_#{uid}"
-  	  	expected_signature = calculate_signature(base, secret)
+  	  	expected_signature = calculate_signature(base, @@api_secret)
     		return expected_signature == signature
   	  end
 	
