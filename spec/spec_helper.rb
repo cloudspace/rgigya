@@ -7,7 +7,5 @@ RSpec.configure do |config|
   # To verify Values
   # GIGYA_API_KEY = "<add api key here>"
   # GIGYA_API_SECRET = "<add api secret here>"
-  
-    
-  
+
 end

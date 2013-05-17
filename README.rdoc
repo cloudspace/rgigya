@@ -23,8 +23,12 @@ You will need to setup your own dev site on the gigya platform for testing.
 
   require 'RGigya'
 
-  GIGYA_API_KEY = "<add api key here>"
-  GIGYA_API_SECRET = "<add api secret here>"
+  RGigya.config({
+    :api_key => "<add api key here>",
+    :api_secret => "<add api secret here>",
+    :use_ssl => false,
+    :domain => "us1"
+  })
 
   RGigya.socialize_notifyLogin({:siteUID => '1'})
 
@@ -34,8 +38,12 @@ You will need to setup your own dev site on the gigya platform for testing.
 Edit your config/environments/development.rb file and add the following constants
 
 
-  GIGYA_API_KEY = "<add api key here>"
-  GIGYA_API_SECRET = "<add api secret here>"
+  RGigya.config({
+    :api_key => "<add api key here>",
+    :api_secret => "<add api secret here>",
+    :use_ssl => false,
+    :domain => "us1"
+  })
 
 Then add your api calls in your controllers, models, libraries, etc.
 
@@ -90,7 +98,7 @@ Edit spec/spec_helper.rb
 === Running tests
 
   cd <root of the project>
-  rspec rgigya_spec.rb
+  rspec
   
   
 == Rails dummy site
