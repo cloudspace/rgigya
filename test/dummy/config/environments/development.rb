@@ -38,5 +38,9 @@ end
 
 
 # The Gigya api key and secret need to be set here
-GIGYA_API_KEY = "<add api key here>"
-GIGYA_API_SECRET = "<add api secret here>"
+RGigya.config({
+  :api_key => "<add api key here>",
+  :api_secret => "<add api secret here>",
+  :use_ssl => false,
+  :domain => "us1"
+})

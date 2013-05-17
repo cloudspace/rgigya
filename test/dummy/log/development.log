@@ -1128,3 +1128,303 @@ Served asset /application.js - 304 Not Modified (0ms)
 
 Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-16 11:10:57 -0400
 Served asset /jquery.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-16 16:56:17 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 80ms (Views: 79.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-16 16:56:17 -0400
+Served asset /application.css - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-16 16:56:17 -0400
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-16 16:56:17 -0400
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-16 16:56:17 -0400
+Served asset /application.js - 200 OK (5ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-16 16:57:27 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-16 16:57:27 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-16 16:57:27 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-16 16:57:27 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-16 16:57:27 -0400
+Served asset /application.js - 304 Not Modified (19ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-16 16:57:38 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-16 16:57:38 -0400
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-16 16:57:38 -0400
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-16 16:57:38 -0400
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-16 16:57:38 -0400
+Served asset /jquery.js - 200 OK (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-16 16:58:42 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-16 16:58:42 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-16 16:58:42 -0400
+Served asset /application.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-16 16:58:42 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-16 16:58:42 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-16 16:59:01 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-16 16:59:01 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-16 16:59:01 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-16 16:59:01 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-16 16:59:01 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-17 10:33:13 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-17 10:33:13 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-17 10:33:13 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-17 10:33:13 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-17 10:33:13 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-17 10:33:51 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 4ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-17 10:33:51 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-17 10:33:51 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-17 10:33:51 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-17 10:33:51 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-17 10:36:29 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-17 10:36:29 -0400
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-17 10:36:29 -0400
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-17 10:36:29 -0400
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-17 10:36:30 -0400
+Served asset /application.js - 200 OK (5ms)
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=X1zvBTEfXqPX2kYZevI4dsNkupk%3D&timestamp=2013-05-17%2014%3A36%3A30&UIDSignature=Gq0m%2Fu99FcSXrHvdeVRGq89pOSY%3D&signatureTimestamp=1368801390&loginProviderUID=100002922034023&isSiteUID=false&signature=X1zvBTEfXqPX2kYZevI4dsNkupk%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-05-17 10:36:32 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"X1zvBTEfXqPX2kYZevI4dsNkupk=", "timestamp"=>"2013-05-17 14:36:30", "UIDSignature"=>"Gq0m/u99FcSXrHvdeVRGq89pOSY=", "signatureTimestamp"=>"1368801390", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"X1zvBTEfXqPX2kYZevI4dsNkupk=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+Completed 500 Internal Server Error in 0ms
+
+ArgumentError (comparison of String with :timestamp failed):
+  app/controllers/welcome_controller.rb:16:in `index'
+
+
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.8ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-17 10:37:30 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 17ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-17 10:37:30 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=%2FupKrltDDCNwBc0k50Q0aWj4okE%3D&timestamp=2013-05-17%2014%3A37%3A30&UIDSignature=aovpWfCJxlj9aAqUyeJo%2BhNqa0g%3D&signatureTimestamp=1368801450&loginProviderUID=100002922034023&isSiteUID=false&signature=%2FupKrltDDCNwBc0k50Q0aWj4okE%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-05-17 10:37:32 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"/upKrltDDCNwBc0k50Q0aWj4okE=", "timestamp"=>"2013-05-17 14:37:30", "UIDSignature"=>"aovpWfCJxlj9aAqUyeJo+hNqa0g=", "signatureTimestamp"=>"1368801450", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"/upKrltDDCNwBc0k50Q0aWj4okE=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 975ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-17 10:37:33 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-17 10:37:33 -0400
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-17 10:37:33 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-17 10:37:33 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-17 10:38:08 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 16ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-17 10:38:08 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=04olk4w4%2FQrTdTKVKZcpc%2Fdpo70%3D&timestamp=2013-05-17%2014%3A38%3A08&UIDSignature=lSqlpW78u8qDfinFyycNXYsndag%3D&signatureTimestamp=1368801488&loginProviderUID=100002922034023&isSiteUID=false&signature=04olk4w4%2FQrTdTKVKZcpc%2Fdpo70%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-05-17 10:38:10 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"04olk4w4/QrTdTKVKZcpc/dpo70=", "timestamp"=>"2013-05-17 14:38:08", "UIDSignature"=>"lSqlpW78u8qDfinFyycNXYsndag=", "signatureTimestamp"=>"1368801488", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"04olk4w4/QrTdTKVKZcpc/dpo70=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+Completed 500 Internal Server Error in 0ms
+
+ArgumentError (comparison of String with :timestamp failed):
+  app/controllers/welcome_controller.rb:16:in `index'
+
+
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/scottsampson/.rvm/gems/ruby-1.9.3-p125@rgigya/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.8ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-17 11:21:44 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-17 11:21:44 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-17 11:21:44 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-17 11:21:44 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-17 11:21:44 -0400
+Served asset /application.js - 304 Not Modified (22ms)
+
+
+Started GET "/welcome.html?provider=facebook&UID=_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I%3D&UIDSig=EHosXFgDESQM3r9QnWyV8vmmTRA%3D&timestamp=2013-05-17%2015%3A21%3A46&UIDSignature=vfBp4BngFthkZ27y8F5hQWis56E%3D&signatureTimestamp=1368804106&loginProviderUID=100002922034023&isSiteUID=false&signature=EHosXFgDESQM3r9QnWyV8vmmTRA%3D&nickname=Fred%20Guy&photoURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dlarge&thumbnailURL=http%3A%2F%2Fgraph.facebook.com%2F100002922034023%2Fpicture%3Ftype%3Dsquare&birthDay=16&birthMonth=5&birthYear=1979&gender=m&email=fbt%40fishingmaster.com&proxiedEmail=&country=&state=&city=Orlando%2C%20Florida&zip=&firstName=Fred&lastName=Guy&profileURL=http%3A%2F%2Fwww.facebook.com%2Ffred.guy.79&isLoggedIn=true&isConnected=true&isSiteUser=true&loginProvider=facebook&isTempUser=false" for 127.0.0.1 at 2013-05-17 11:21:47 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"provider"=>"facebook", "UID"=>"_guid_Fl0PNcNBhiBWbQxbhAJHHXqFsI22kJulKl43kwQFO-I=", "UIDSig"=>"EHosXFgDESQM3r9QnWyV8vmmTRA=", "timestamp"=>"2013-05-17 15:21:46", "UIDSignature"=>"vfBp4BngFthkZ27y8F5hQWis56E=", "signatureTimestamp"=>"1368804106", "loginProviderUID"=>"100002922034023", "isSiteUID"=>"false", "signature"=>"EHosXFgDESQM3r9QnWyV8vmmTRA=", "nickname"=>"Fred Guy", "photoURL"=>"http://graph.facebook.com/100002922034023/picture?type=large", "thumbnailURL"=>"http://graph.facebook.com/100002922034023/picture?type=square", "birthDay"=>"16", "birthMonth"=>"5", "birthYear"=>"1979", "gender"=>"m", "email"=>"fbt@fishingmaster.com", "proxiedEmail"=>"", "country"=>"", "state"=>"", "city"=>"Orlando, Florida", "zip"=>"", "firstName"=>"Fred", "lastName"=>"Guy", "profileURL"=>"http://www.facebook.com/fred.guy.79", "isLoggedIn"=>"true", "isConnected"=>"true", "isSiteUser"=>"true", "loginProvider"=>"facebook", "isTempUser"=>"false"}
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 563ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-17 11:21:48 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-17 11:21:48 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-17 11:21:48 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-17 11:21:48 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)

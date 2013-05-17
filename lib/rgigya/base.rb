@@ -155,6 +155,7 @@ module RGigya
     # @author Scott Sampson
     def prepare_for_signature(h)
       ordered_hash = {} #insert order with hash is preserved since ruby 1.9.2
+      h = h.inject({}){|p,(k,v)| p[k.to_sym] = v; p}
       h.keys.sort.each do |key|
         value = h[key]
         if(!!value == value) #duck typeing.......quack

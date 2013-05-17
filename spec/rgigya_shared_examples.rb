@@ -304,10 +304,10 @@ shared_examples_for RGigya do
       
     end
     
-    it "should get the users info" do
+    it "should get the users info", :user_info => true do
       uid = get_uid
       response = RGigya.socialize_getUserInfo({
-        :UID => uid,
+        'UID' => uid,
       })
       response['nickname'].should match 'Gigems'
     end
