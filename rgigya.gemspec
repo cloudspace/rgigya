@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "rgigya"
-  s.version = "1.0.2"
+  s.version = "1.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Scott Sampson"]
-  s.date = "2013-04-17"
+  s.date = "2013-05-17"
   s.description = "This is a ruby SDK for the Gigya api."
   s.email = "scott@cloudspace.com"
   s.extra_rdoc_files = [
@@ -25,9 +25,14 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "lib/rgigya.rb",
+    "lib/rgigya/base.rb",
+    "lib/rgigya/hash.rb",
+    "lib/rgigya/sig_utils.rb",
     "rgigya.gemspec",
     "spec/helpers.rb",
-    "spec/rgigya_spec.rb",
+    "spec/rgigya_secure_spec.rb",
+    "spec/rgigya_shared_examples.rb",
+    "spec/rgigya_signature_spec.rb",
     "spec/spec_helper.rb",
     "test/dummy/Gemfile",
     "test/dummy/Gemfile.lock",
