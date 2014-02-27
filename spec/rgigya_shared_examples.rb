@@ -228,6 +228,7 @@ shared_examples_for RGigya do
     end
       
     it "should raise json error if gigya returns bad json" do
+      
       HTTParty.stub(:get) do |url,options|
         Response = mock("Response")
         Response.stub(:body) {
@@ -236,11 +237,11 @@ shared_examples_for RGigya do
         Response
       end
       HTTParty.stub(:post) do |url,options|
-        Response = mock("Response")
-        Response.stub(:body) {
+        Response2 = mock("Response")
+        Response2.stub(:body) {
           '{'
         }
-        Response
+        Response2
       end
       
       
