@@ -35,8 +35,7 @@ You will need to setup your own dev site on the gigya platform for testing.
 
 === With Rails
 
-Edit your config/environments/development.rb file and add the following constants
-
+Create a file named `config/initializers/rgigya.rb` and add the following setup:
 
   RGigya.config({
     :api_key => "<add api key here>",
