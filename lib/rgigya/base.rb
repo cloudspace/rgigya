@@ -41,7 +41,7 @@ module RGigya
   # Custom Exceptions so we know it came from the library
   # When in use please namespace them appropriately RGigya::ResponseError for readability
   #
-  exceptions = %w[ UIDParamIsNil SiteUIDParamIsNil ResponseError BadParamsOrMethodName ErrorCodeReturned MissingApiKey MissingApiSecret]  
+  exceptions = %w[UIDParamIsNil SiteUIDParamIsNil ResponseError BadParamsOrMethodName ErrorCodeReturned MissingApiKey MissingApiSecret InvalidLoginIdOrPassword PasswordCannotBeTheSame]
   exceptions.each { |e| const_set(e, Class.new(StandardError)) }
   RGigya::JSONParseError = Class.new(JSON::ParserError)
   
