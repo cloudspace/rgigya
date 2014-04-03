@@ -269,18 +269,33 @@ module RGigya
         when '400002'
           raise RGigya::BadParamsOrMethodName, results['errorDetails']
         when '403003'
-          log("RGigya returned Error code #{results['errorCode']}.\n\nError Message: #{results['errorMessage']}\n\nError Details: #{results['errorDetails']}\n\n")
+          log_error(results)
           log("Rgigya base_signature_string = #{@@base_signature_string}\n\n")
           log("Gigya base_signature_string = #{results['baseString']}\n\n\n")
           log("Rgigya signature = #{@@signature}\n\n")
           log("Gigya signature = #{results['expectedSignature']}\n\n")
-          raise RGigya::ErrorCodeReturned, "returned Error code #{results['errorCode']}: #{results['errorMessage']}"
-        else 
-          log("RGigya returned Error code #{results['errorCode']}.\n\nError Message: #{results['errorMessage']}\n\nError Details: #{results['errorDetails']}")
+        when '400006'
+          log_error(results)
+          raise RGigya::PasswordCannotBeTheSame, "returned Error code #{results['errorCode']}: #{results['errorMessage']}"
+        when '403042'
+          log_error(results)
+          raise RGigya::InvalidLoginIdOrPassword, "returned Error code #{results['errorCode']}: #{results['errorMessage']}"
+        else
+          log_error(results)
           raise RGigya::ErrorCodeReturned, "returned Error code #{results['errorCode']}: #{results['errorMessage']}"
       end
     end
-    
+
+    ##
+    # Helper method to log errors so these strings aren't duplicated in the method above.
+    #
+    # @param [Hash] results The results to log
+    #
+    # @author Mark Rickert
+    def log_error(results)
+      log("RGigya returned Error code #{results['errorCode']}.\n\nError Message: #{results['errorMessage']}\n\nError Details: #{results['errorDetails']}")
+    end
+
     ##
     # Override method_missing so we don't have to write all the dang methods
     #
