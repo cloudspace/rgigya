@@ -259,7 +259,7 @@ module RGigya
     # TODO:  Shouldn't fail so hard.  If there is a temporary connectivity problem we should fail more gracefully.
     # You can find a list of response codes at http://developers.gigya.com/037_API_reference/zz_Response_Codes_and_Errors
     #
-    # @author Scott Sampson
+    # @author Scott Sampson, Mark Rickert
     def check_for_errors(results)
       case results['errorCode'].to_s
         when '0'
