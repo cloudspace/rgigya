@@ -9,8 +9,9 @@ Gem::Specification.new do |s|
   s.version = "1.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
+  s.require_paths = ["lib"]
   s.authors = ["Scott Sampson"]
-  s.date = "2014-02-27"
+  s.date = "2014-03-27"
   s.description = "This is a ruby SDK for the Gigya api."
   s.email = "scott@cloudspace.com"
   s.extra_rdoc_files = [
@@ -27,7 +28,6 @@ Gem::Specification.new do |s|
     "VERSION",
     "lib/rgigya.rb",
     "lib/rgigya/base.rb",
-    "lib/rgigya/hash.rb",
     "lib/rgigya/sig_utils.rb",
     "rgigya.gemspec",
     "spec/helpers.rb",
@@ -90,20 +90,21 @@ Gem::Specification.new do |s|
   ]
   s.homepage = "http://github.com/cloudspace/rgigya"
   s.licenses = ["MIT"]
-  s.require_paths = ["lib"]
-  s.rubygems_version = "2.1.11"
+  s.rubygems_version = "2.2.1"
   s.summary = "Ruby Wrapper/SDK for the Gigya api"
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<activesupport>, [">= 3.0.9"])
       s.add_runtime_dependency(%q<httparty>, ["~> 0.11.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 2.0.1"])
       s.add_development_dependency(%q<shoulda>, [">= 0"])
       s.add_development_dependency(%q<rdoc>, ["~> 3.12"])
       s.add_development_dependency(%q<rspec>, [">= 0"])
     else
+      s.add_dependency(%q<activesupport>, [">= 3.0.9"])
       s.add_dependency(%q<httparty>, ["~> 0.11.0"])
       s.add_dependency(%q<jeweler>, ["~> 2.0.1"])
       s.add_dependency(%q<shoulda>, [">= 0"])
@@ -111,6 +112,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<rspec>, [">= 0"])
     end
   else
+    s.add_dependency(%q<activesupport>, [">= 3.0.9"])
     s.add_dependency(%q<httparty>, ["~> 0.11.0"])
     s.add_dependency(%q<jeweler>, ["~> 2.0.1"])
     s.add_dependency(%q<shoulda>, [">= 0"])
