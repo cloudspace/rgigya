@@ -6,10 +6,10 @@
 # @author Michael Orr
 
 class Hash
-  
-  
+
+
   # returns a query string
-  # 
+  #
   # @return [String] concated string of key value pairs in the hash
   #
   # @author Scott Sampson
