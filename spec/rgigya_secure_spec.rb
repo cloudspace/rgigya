@@ -12,7 +12,7 @@ describe "RGigyaSecure" do
     @protocol = "https"
     @method = "GET"
   end
-  
-  
+
+
   it_behaves_like RGigya
 end

@@ -5,7 +5,7 @@ module Helpers
     })
     return response['UID']
   end
-  
+
   def sample_frends_json_data
     return JSON('{
             "friends": [{
