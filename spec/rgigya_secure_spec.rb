@@ -13,6 +13,5 @@ describe "RGigyaSecure" do
     @method = "GET"
   end
 
-
   it_behaves_like RGigya
 end
