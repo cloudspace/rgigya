@@ -107,7 +107,29 @@ shared_examples_for RGigya do
       }.to raise_error(RGigya::BadParamsOrMethodName)
     end
     
-    it "should raise an error when an errorcode other than 0,400002, or 400124 is returned" do
+    it "should raise an error when we pass in two of the same passwords" do
+      buffer = StringIO.new
+      $stdout = buffer
+      expect {
+        RGigya.check_for_errors({
+          'errorCode' => 400006
+        })
+      }.to raise_error(RGigya::PasswordCannotBeTheSame)
+      $stdout = STDOUT
+    end
+
+    it "should raise an error when we pass in an invalid current password" do
+      buffer = StringIO.new
+      $stdout = buffer
+      expect {
+        RGigya.check_for_errors({
+          'errorCode' => 403042
+        })
+      }.to raise_error(RGigya::InvalidLoginIdOrPassword)
+      $stdout = STDOUT
+    end
+
+    it "should raise an error when an errorcode other than 0, 400002, 400006, 403042, or 400124 is returned" do
       # Buffering the log
       buffer = StringIO.new
       $stdout = buffer

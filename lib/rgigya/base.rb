@@ -41,7 +41,7 @@ module RGigya
   # Custom Exceptions so we know it came from the library
   # When in use please namespace them appropriately RGigya::ResponseError for readability
   #
-  exceptions = %w[ UIDParamIsNil SiteUIDParamIsNil ResponseError BadParamsOrMethodName ErrorCodeReturned MissingApiKey MissingApiSecret]  
+  exceptions = %w[UIDParamIsNil SiteUIDParamIsNil ResponseError BadParamsOrMethodName ErrorCodeReturned MissingApiKey MissingApiSecret InvalidLoginIdOrPassword PasswordCannotBeTheSame]
   exceptions.each { |e| const_set(e, Class.new(StandardError)) }
   RGigya::JSONParseError = Class.new(JSON::ParserError)
   
@@ -259,7 +259,7 @@ module RGigya
     # TODO:  Shouldn't fail so hard.  If there is a temporary connectivity problem we should fail more gracefully.
     # You can find a list of response codes at http://developers.gigya.com/037_API_reference/zz_Response_Codes_and_Errors
     #
-    # @author Scott Sampson
+    # @author Scott Sampson, Mark Rickert
     def check_for_errors(results)
       case results['errorCode'].to_s
         when '0'
@@ -269,18 +269,33 @@ module RGigya
         when '400002'
           raise RGigya::BadParamsOrMethodName, results['errorDetails']
         when '403003'
-          log("RGigya returned Error code #{results['errorCode']}.\n\nError Message: #{results['errorMessage']}\n\nError Details: #{results['errorDetails']}\n\n")
+          log_error(results)
           log("Rgigya base_signature_string = #{@@base_signature_string}\n\n")
           log("Gigya base_signature_string = #{results['baseString']}\n\n\n")
           log("Rgigya signature = #{@@signature}\n\n")
           log("Gigya signature = #{results['expectedSignature']}\n\n")
-          raise RGigya::ErrorCodeReturned, "returned Error code #{results['errorCode']}: #{results['errorMessage']}"
-        else 
-          log("RGigya returned Error code #{results['errorCode']}.\n\nError Message: #{results['errorMessage']}\n\nError Details: #{results['errorDetails']}")
+        when '400006'
+          log_error(results)
+          raise RGigya::PasswordCannotBeTheSame, "returned Error code #{results['errorCode']}: #{results['errorMessage']}"
+        when '403042'
+          log_error(results)
+          raise RGigya::InvalidLoginIdOrPassword, "returned Error code #{results['errorCode']}: #{results['errorMessage']}"
+        else
+          log_error(results)
           raise RGigya::ErrorCodeReturned, "returned Error code #{results['errorCode']}: #{results['errorMessage']}"
       end
     end
-    
+
+    ##
+    # Helper method to log errors so these strings aren't duplicated in the method above.
+    #
+    # @param [Hash] results The results to log
+    #
+    # @author Mark Rickert
+    def log_error(results)
+      log("RGigya returned Error code #{results['errorCode']}.\n\nError Message: #{results['errorMessage']}\n\nError Details: #{results['errorDetails']}")
+    end
+
     ##
     # Override method_missing so we don't have to write all the dang methods
     #
